@@ -164,13 +164,13 @@ sqlite3 *db ;
 }
 //查询数据
 - (void)operateDB{
-    const char *sql = "select * from personsou" ;
+    const char *sql = "select * from person" ;
     //创建sql语句对象
     sqlite3_stmt *sm ;
     int result = sqlite3_prepare_v2(db, sql, -1, &sm, NULL) ;
     if (result == SQLITE_OK) {  //是否准备结束
         while(sqlite3_step(sm) == SQLITE_ROW){  //开始遍历查询结果
-            NSLog(@"name %s,age %d",sqlite3_column_text(sm, 1),sqlite3_column_int(sm, 2)) ;
+            NSLog(@"name %s,age:%d",sqlite3_column_text(sm, 1),sqlite3_column_int(sm, 2)) ;
         }
     }
 }
