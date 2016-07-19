@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Person.h"
+#import <sqlite3.h>
 
 @interface ViewController ()
 
@@ -23,7 +24,8 @@
 //    [self userDefaultDemo] ;
 //    [self simpleArchiver] ;
 //    [self personArchiverDemo] ;
-    [self personTwoArchiverDeom] ;
+//    [self personTwoArchiverDeom] ;
+    [self sqliteDemo] ;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -149,5 +151,36 @@
     NSLog(@"p2:%@---pp2:%@",p2,pp2) ;
 }
 
+//初始化打开数据库
+sqlite3 *db ;
+-(void)initDB{
+    NSString *path = [[NSBundle mainBundle]pathForResource:@"test.sqlite" ofType:nil] ;
+    if (sqlite3_open([path UTF8String], &db) == SQLITE_OK) {
+        NSLog(@"数据库打开成功") ;
+    }else{
+        sqlite3_close(db) ;
+        NSLog(@"数据库打开失败") ;
+    }
+}
+//查询数据
+- (void)operateDB{
+    const char *sql = "select * from personsou" ;
+    //创建sql语句对象
+    sqlite3_stmt *sm ;
+    int result = sqlite3_prepare_v2(db, sql, -1, &sm, NULL) ;
+    if (result == SQLITE_OK) {  //是否准备结束
+        while(sqlite3_step(sm) == SQLITE_ROW){  //开始遍历查询结果
+            NSLog(@"name %s,age %d",sqlite3_column_text(sm, 1),sqlite3_column_int(sm, 2)) ;
+        }
+    }
+}
+
+
+//使用sqlite进行数据存储
+- (void)sqliteDemo{
+    [self initDB];
+    [self operateDB] ;
+    
+}
 
 @end
