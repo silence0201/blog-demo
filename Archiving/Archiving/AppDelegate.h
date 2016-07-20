@@ -19,6 +19,11 @@
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
+- (void)undo ;
+- (void)redo ;
+- (void)rollback ;
+- (void)reset ;
+
 
 
 @end

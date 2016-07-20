@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15G31" minimumToolsVersion="Automatic">
-    <entity name="Card" syncable="YES">
+    <entity name="Card" representedClassName="Card" syncable="YES">
         <attribute name="no" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <relationship name="person" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="card" inverseEntity="Person" syncable="YES"/>
+        <relationship name="persons" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Per" inverseName="card" inverseEntity="Per" syncable="YES"/>
     </entity>
-    <entity name="Person" syncable="YES">
+    <entity name="Per" representedClassName="Person" syncable="YES">
         <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="card" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Card" inverseName="person" inverseEntity="Card" syncable="YES"/>
+        <relationship name="card" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Card" inverseName="persons" inverseEntity="Card" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Person" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="Per" positionX="-63" positionY="-18" width="128" height="90"/>
         <element name="Card" positionX="-54" positionY="9" width="128" height="75"/>
     </elements>
 </model>

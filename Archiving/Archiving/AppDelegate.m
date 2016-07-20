@@ -123,5 +123,21 @@
         }
     }
 }
+- (void)undo{
+    [_managedObjectContext undo];
+    
+}
+
+- (void)redo{
+    [_managedObjectContext redo];
+}
+
+- (void)rollback{
+    [_managedObjectContext rollback];
+}
+
+- (void)reset{
+    [_managedObjectContext reset];
+}
 
 @end

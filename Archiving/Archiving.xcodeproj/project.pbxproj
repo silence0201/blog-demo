@@ -35,8 +35,8 @@
 		E89E3CC61D3A1F4100BF1635 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E89E3CC91D3A1F4100BF1635 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E89E3CCB1D3A1F4100BF1635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E89E3CD21D3A2C4400BF1635 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		E89E3CD31D3A2C4400BF1635 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		E89E3CD21D3A2C4400BF1635 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = Archiving/Person.h; sourceTree = "<group>"; };
+		E89E3CD31D3A2C4400BF1635 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = Archiving/Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +55,8 @@
 		E89E3CAB1D3A1F4100BF1635 = {
 			isa = PBXGroup;
 			children = (
+				E89E3CD21D3A2C4400BF1635 /* Person.h */,
+				E89E3CD31D3A2C4400BF1635 /* Person.m */,
 				E8733C171D3FC587002F41A9 /* CoreData.framework */,
 				E80E82DF1D3E7BEF000A0FF5 /* libsqlite3.tbd */,
 				E89E3CB61D3A1F4100BF1635 /* Archiving */,
@@ -83,8 +85,6 @@
 				E89E3CCB1D3A1F4100BF1635 /* Info.plist */,
 				E89E3CC31D3A1F4100BF1635 /* Archiving.xcdatamodeld */,
 				E89E3CB71D3A1F4100BF1635 /* Supporting Files */,
-				E89E3CD21D3A2C4400BF1635 /* Person.h */,
-				E89E3CD31D3A2C4400BF1635 /* Person.m */,
 			);
 			path = Archiving;
 			sourceTree = "<group>";
