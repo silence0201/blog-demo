@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E80E82E01D3E7BEF000A0FF5 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E80E82DF1D3E7BEF000A0FF5 /* libsqlite3.tbd */; };
 		E80E82E31D3E81E1000A0FF5 /* test.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = E80E82E21D3E81E1000A0FF5 /* test.sqlite */; };
+		E8733C181D3FC587002F41A9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8733C171D3FC587002F41A9 /* CoreData.framework */; };
 		E89E3CB91D3A1F4100BF1635 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E89E3CB81D3A1F4100BF1635 /* main.m */; };
 		E89E3CBC1D3A1F4100BF1635 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E89E3CBB1D3A1F4100BF1635 /* AppDelegate.m */; };
 		E89E3CBF1D3A1F4100BF1635 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E89E3CBE1D3A1F4100BF1635 /* ViewController.m */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		E80E82DF1D3E7BEF000A0FF5 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		E80E82E21D3E81E1000A0FF5 /* test.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.sqlite; sourceTree = "<group>"; };
+		E8733C171D3FC587002F41A9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		E89E3CB41D3A1F4100BF1635 /* Archiving.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Archiving.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E89E3CB81D3A1F4100BF1635 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E89E3CBA1D3A1F4100BF1635 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -42,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8733C181D3FC587002F41A9 /* CoreData.framework in Frameworks */,
 				E80E82E01D3E7BEF000A0FF5 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,6 +55,7 @@
 		E89E3CAB1D3A1F4100BF1635 = {
 			isa = PBXGroup;
 			children = (
+				E8733C171D3FC587002F41A9 /* CoreData.framework */,
 				E80E82DF1D3E7BEF000A0FF5 /* libsqlite3.tbd */,
 				E89E3CB61D3A1F4100BF1635 /* Archiving */,
 				E89E3CB51D3A1F4100BF1635 /* Products */,

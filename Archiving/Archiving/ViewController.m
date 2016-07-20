@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Person.h"
 #import <sqlite3.h>
+#import <CoreData/CoreData.h>
 
 @interface ViewController ()
 
