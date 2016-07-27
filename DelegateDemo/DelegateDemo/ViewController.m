@@ -31,7 +31,7 @@
     [tc startTheTimer] ;
 }
 
-//"被委托对象"实现协议声明的方法,由"委托对象"调用
+//实现对应的委托必选方法
 - (void)updateAlert
 {
     UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"提示" message:@"时间到" delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定",nil];

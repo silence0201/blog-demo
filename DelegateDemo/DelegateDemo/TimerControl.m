@@ -14,6 +14,7 @@
     [NSTimer scheduledTimerWithTimeInterval:5.0f target:self selector:@selector(timeProc) userInfo:nil repeats:NO];
 }
 
+// 定义方法对委托方进行调用
 - (void)timeProc{
     if (self.updateAlterBlock) {
         //判断协议中是否实现了该方法

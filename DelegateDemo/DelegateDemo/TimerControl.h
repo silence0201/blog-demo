@@ -9,16 +9,24 @@
 #import <Foundation/Foundation.h>
 
 typedef void(^UpdateAlterBlock)();
-//委托的协议定义
+//指定代理的需要遵守的协议
 @protocol TimeControlDelegate <NSObject>
 
+// 必须要实现
+@required
 - (void)updateAlter ;
+
+// 可选实现
+@optional
+- (void)test ;
 
 @end
 
 @interface TimerControl : NSObject
 
+// 指定对应的代理属性
 @property(nonatomic,weak) id<TimeControlDelegate> delegate ;
+
 @property(nonatomic,copy) UpdateAlterBlock updateAlterBlock ;
 
 - (void)startTheTimer ;
