@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R0R-Of-9nt">
+                                <rect key="frame" x="35" y="37" width="250" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="7JO-O1-nOl"/>
+                                    <constraint firstAttribute="height" constant="300" id="Jed-ay-9p4"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="Pg2-Kg-og9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="shm-OA-kJE"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="af7-TB-BKo">
+                                <rect key="frame" x="130" y="362" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="gU5-MO-tk7"/>
+                                    <constraint firstAttribute="width" constant="60" id="v53-0D-fqN"/>
+                                </constraints>
+                                <state key="normal" title="选择照片"/>
+                                <connections>
+                                    <action selector="pickImage" destination="BYZ-38-t0r" eventType="touchUpInside" id="RK3-sh-Va8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhs-9B-XGk">
+                                <rect key="frame" x="35" y="362" width="60" height="30"/>
+                                <state key="normal" title="链接设备"/>
+                                <connections>
+                                    <action selector="connectDevice" destination="BYZ-38-t0r" eventType="touchUpInside" id="ayv-kL-nPq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tr-ej-khb">
+                                <rect key="frame" x="225" y="362" width="60" height="30"/>
+                                <state key="normal" title="发送照片"/>
+                                <connections>
+                                    <action selector="sendImage" destination="BYZ-38-t0r" eventType="touchUpInside" id="RpM-R6-GAM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="af7-TB-BKo" firstAttribute="height" secondItem="zhs-9B-XGk" secondAttribute="height" id="0lJ-xw-QXn"/>
+                            <constraint firstItem="5tr-ej-khb" firstAttribute="height" secondItem="zhs-9B-XGk" secondAttribute="height" id="1va-yc-vjk"/>
+                            <constraint firstItem="zhs-9B-XGk" firstAttribute="leading" secondItem="R0R-Of-9nt" secondAttribute="leading" id="4jd-cz-ODa"/>
+                            <constraint firstItem="af7-TB-BKo" firstAttribute="centerX" secondItem="R0R-Of-9nt" secondAttribute="centerX" id="6ou-PX-AOg"/>
+                            <constraint firstItem="R0R-Of-9nt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="83Q-8O-rjL"/>
+                            <constraint firstItem="af7-TB-BKo" firstAttribute="width" secondItem="zhs-9B-XGk" secondAttribute="width" id="EFj-ft-cBq"/>
+                            <constraint firstItem="5tr-ej-khb" firstAttribute="trailing" secondItem="R0R-Of-9nt" secondAttribute="trailing" id="EHk-bt-114"/>
+                            <constraint firstItem="af7-TB-BKo" firstAttribute="top" secondItem="R0R-Of-9nt" secondAttribute="bottom" constant="25" id="acV-Q4-Ygx"/>
+                            <constraint firstItem="af7-TB-BKo" firstAttribute="centerY" secondItem="zhs-9B-XGk" secondAttribute="centerY" id="aek-du-HUH"/>
+                            <constraint firstItem="5tr-ej-khb" firstAttribute="width" secondItem="zhs-9B-XGk" secondAttribute="width" id="bJY-If-gWS"/>
+                            <constraint firstItem="R0R-Of-9nt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="clJ-2I-uak"/>
+                            <constraint firstItem="5tr-ej-khb" firstAttribute="centerY" secondItem="af7-TB-BKo" secondAttribute="centerY" id="utS-EG-hw1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="R0R-Of-9nt" id="Os6-Oo-0Ee"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162.66666666666666" y="406.59333333333331"/>
+        </scene>
+    </scenes>
+</document>
