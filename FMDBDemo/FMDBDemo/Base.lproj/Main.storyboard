@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Sm3-jx-8Mi">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--请选择-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0YE-r1-O0n">
+                                <rect key="frame" x="270" y="151" width="60" height="30"/>
+                                <state key="normal" title="普通使用"/>
+                                <connections>
+                                    <segue destination="Obn-2t-Y05" kind="show" id="shf-q3-6St"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6O-6O-7bu">
+                                <rect key="frame" x="270" y="273" width="60" height="30"/>
+                                <state key="normal" title="事务使用"/>
+                                <connections>
+                                    <segue destination="hWD-WI-a8C" kind="show" id="ypq-8J-yQg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0YE-r1-O0n" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="87" id="0Ny-KQ-nfP"/>
+                            <constraint firstItem="0YE-r1-O0n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YBC-UK-Z49"/>
+                            <constraint firstItem="T6O-6O-7bu" firstAttribute="centerX" secondItem="0YE-r1-O0n" secondAttribute="centerX" id="axm-nL-SoA"/>
+                            <constraint firstItem="T6O-6O-7bu" firstAttribute="top" secondItem="0YE-r1-O0n" secondAttribute="bottom" constant="92" id="b2V-8B-Odk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="请选择" id="kfD-nF-cFI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="965" y="516"/>
+        </scene>
+        <!--普通使用-->
+        <scene sceneID="Nf8-Z6-HEI">
+            <objects>
+                <viewController id="Obn-2t-Y05" customClass="SampleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ymK-Ha-YeA"/>
+                        <viewControllerLayoutGuide type="bottom" id="q2F-2e-S6m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XyB-sC-piU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8Q-kL-jS9">
+                                <rect key="frame" x="270" y="114" width="60" height="30"/>
+                                <state key="normal" title="插入数据"/>
+                                <connections>
+                                    <action selector="insert" destination="Obn-2t-Y05" eventType="touchUpInside" id="dva-m1-GmC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ux4-Mf-jGj">
+                                <rect key="frame" x="270" y="164" width="60" height="30"/>
+                                <state key="normal" title="删除数据"/>
+                                <connections>
+                                    <action selector="delete" destination="Obn-2t-Y05" eventType="touchUpInside" id="NTi-Ij-zfH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohb-sO-Ec5">
+                                <rect key="frame" x="270" y="214" width="60" height="30"/>
+                                <state key="normal" title="修改数据"/>
+                                <connections>
+                                    <action selector="update" destination="Obn-2t-Y05" eventType="touchUpInside" id="fsM-lQ-L4F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Pq-p5-ag1">
+                                <rect key="frame" x="270" y="264" width="60" height="30"/>
+                                <state key="normal" title="查看数据"/>
+                                <connections>
+                                    <action selector="select" destination="Obn-2t-Y05" eventType="touchUpInside" id="a3Y-et-ZzW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZ2-Il-oyU">
+                                <rect key="frame" x="263" y="314" width="75" height="30"/>
+                                <state key="normal" title="删除数据表"/>
+                                <connections>
+                                    <action selector="drop" destination="Obn-2t-Y05" eventType="touchUpInside" id="r7T-lF-RNo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="s8Q-kL-jS9" firstAttribute="centerX" secondItem="XyB-sC-piU" secondAttribute="centerX" id="1E8-xz-sQr"/>
+                            <constraint firstItem="ohb-sO-Ec5" firstAttribute="centerX" secondItem="XyB-sC-piU" secondAttribute="centerX" id="7YJ-Ft-3e8"/>
+                            <constraint firstItem="3Pq-p5-ag1" firstAttribute="top" secondItem="ohb-sO-Ec5" secondAttribute="bottom" constant="20" id="8sC-Ig-aPK"/>
+                            <constraint firstItem="ohb-sO-Ec5" firstAttribute="top" secondItem="Ux4-Mf-jGj" secondAttribute="bottom" constant="20" id="Caa-A1-VHa"/>
+                            <constraint firstItem="Ux4-Mf-jGj" firstAttribute="centerX" secondItem="XyB-sC-piU" secondAttribute="centerX" id="HbV-Dg-2Hb"/>
+                            <constraint firstItem="s8Q-kL-jS9" firstAttribute="top" secondItem="ymK-Ha-YeA" secondAttribute="bottom" constant="50" id="Lkg-n7-Lrj"/>
+                            <constraint firstItem="jZ2-Il-oyU" firstAttribute="top" secondItem="3Pq-p5-ag1" secondAttribute="bottom" constant="20" id="mSs-4M-4aG"/>
+                            <constraint firstItem="jZ2-Il-oyU" firstAttribute="centerX" secondItem="XyB-sC-piU" secondAttribute="centerX" id="r0Q-aB-3rL"/>
+                            <constraint firstItem="Ux4-Mf-jGj" firstAttribute="top" secondItem="s8Q-kL-jS9" secondAttribute="bottom" constant="20" id="tfq-TG-pM1"/>
+                            <constraint firstItem="3Pq-p5-ag1" firstAttribute="centerX" secondItem="XyB-sC-piU" secondAttribute="centerX" id="wSD-qO-XIx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="普通使用" id="mgc-So-kbm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nHw-qn-bGq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1708" y="-30"/>
+        </scene>
+        <!--事务使用-->
+        <scene sceneID="Z7d-a9-GJo">
+            <objects>
+                <viewController id="hWD-WI-a8C" customClass="TransactionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cGz-G3-gVu"/>
+                        <viewControllerLayoutGuide type="bottom" id="PTm-Hr-RmG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="feG-t6-grA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2UB-iG-ksC">
+                                <rect key="frame" x="270" y="114" width="60" height="30"/>
+                                <state key="normal" title="插入数据"/>
+                                <connections>
+                                    <action selector="insert" destination="hWD-WI-a8C" eventType="touchUpInside" id="Uye-MR-ZzS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPR-qC-IXq">
+                                <rect key="frame" x="270" y="164" width="60" height="30"/>
+                                <state key="normal" title="删除数据"/>
+                                <connections>
+                                    <action selector="delete" destination="hWD-WI-a8C" eventType="touchUpInside" id="NaT-da-l8s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5M-Wh-S5b">
+                                <rect key="frame" x="270" y="214" width="60" height="30"/>
+                                <state key="normal" title="修改数据"/>
+                                <connections>
+                                    <action selector="update" destination="hWD-WI-a8C" eventType="touchUpInside" id="eeN-HF-t1p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCG-VQ-hI2">
+                                <rect key="frame" x="270" y="264" width="60" height="30"/>
+                                <state key="normal" title="查看数据"/>
+                                <connections>
+                                    <action selector="select" destination="hWD-WI-a8C" eventType="touchUpInside" id="Fhc-Ad-ffN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76e-Rb-ap6">
+                                <rect key="frame" x="263" y="314" width="75" height="30"/>
+                                <state key="normal" title="删除数据表"/>
+                                <connections>
+                                    <action selector="drop" destination="hWD-WI-a8C" eventType="touchUpInside" id="PK5-V6-HK2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="E5M-Wh-S5b" firstAttribute="centerX" secondItem="feG-t6-grA" secondAttribute="centerX" id="3eW-5T-hb8"/>
+                            <constraint firstItem="76e-Rb-ap6" firstAttribute="centerX" secondItem="feG-t6-grA" secondAttribute="centerX" id="J8z-UY-Gmk"/>
+                            <constraint firstItem="E5M-Wh-S5b" firstAttribute="top" secondItem="vPR-qC-IXq" secondAttribute="bottom" constant="20" id="MLl-pu-sXk"/>
+                            <constraint firstItem="vPR-qC-IXq" firstAttribute="centerX" secondItem="feG-t6-grA" secondAttribute="centerX" id="Mz8-nh-aku"/>
+                            <constraint firstItem="2UB-iG-ksC" firstAttribute="top" secondItem="cGz-G3-gVu" secondAttribute="bottom" constant="50" id="QUK-U2-G2f"/>
+                            <constraint firstItem="2UB-iG-ksC" firstAttribute="centerX" secondItem="feG-t6-grA" secondAttribute="centerX" id="Stm-YV-mcA"/>
+                            <constraint firstItem="vPR-qC-IXq" firstAttribute="top" secondItem="2UB-iG-ksC" secondAttribute="bottom" constant="20" id="Zvb-XC-qod"/>
+                            <constraint firstItem="mCG-VQ-hI2" firstAttribute="centerX" secondItem="feG-t6-grA" secondAttribute="centerX" id="dfa-b4-Vtk"/>
+                            <constraint firstItem="76e-Rb-ap6" firstAttribute="top" secondItem="mCG-VQ-hI2" secondAttribute="bottom" constant="20" id="haM-dD-E3h"/>
+                            <constraint firstItem="mCG-VQ-hI2" firstAttribute="top" secondItem="E5M-Wh-S5b" secondAttribute="bottom" constant="20" id="ugY-wq-yQu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="事务使用" id="JJy-VQ-ZaU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OWQ-yS-aTy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1726" y="899"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LgP-Ox-Fcb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Sm3-jx-8Mi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DWD-Fe-RVR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="oa3-Pr-EiW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="meh-ot-PcK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="308" y="505"/>
+        </scene>
+    </scenes>
+</document>
