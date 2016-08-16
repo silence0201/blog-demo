@@ -43,4 +43,23 @@
     return newImage ;
 }
 
+- (UIImage *)circleImage:(UIImage *)image withParam:(CGFloat)inset{
+    // 开启图像上下文
+    UIGraphicsBeginImageContext(image.size) ;
+    CGContextRef context = UIGraphicsGetCurrentContext() ;
+    CGContextSetLineWidth(context, 2) ;
+    CGRect rect = CGRectMake(inset, inset, image.size.width - inset * 2, image.size.height - inset *2) ;
+    CGContextAddEllipseInRect(context, rect) ;
+    CGContextClip(context) ;
+    
+    [image drawInRect:rect] ;
+    CGContextAddEllipseInRect(context, rect);
+    CGContextStrokePath(context);
+    UIImage *newimg = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return newimg ;
+    
+}
+
 @end

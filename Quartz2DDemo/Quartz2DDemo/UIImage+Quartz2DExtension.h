@@ -22,4 +22,14 @@
  */
 - (UIImage *)waterImageWithImageName:(NSString *)imageName waterImageName:(NSString *)waterImageName scale:(CGFloat) scale waterScale:(CGFloat)waterScale;
 
+/**
+ *  裁剪圆形图片
+ *
+ *  @param image 图片
+ *  @param inset 内间距
+ *
+ *  @return 裁剪后的图片
+ */
+- (UIImage*) circleImage:(UIImage*) image withParam:(CGFloat) inset ;
+
 @end
