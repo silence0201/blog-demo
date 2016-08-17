@@ -62,4 +62,17 @@
     
 }
 
+- (UIImage *)scroonSnap:(UIView *)view{
+    // 开启图形上下文
+    UIGraphicsBeginImageContext(view.bounds.size) ;
+    
+    // 渲染View
+    [view.layer renderInContext:UIGraphicsGetCurrentContext()] ;
+    
+    // 获取图片
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext() ;
+    
+    return image ;
+}
+
 @end

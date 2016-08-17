@@ -32,4 +32,11 @@
  */
 - (UIImage*) circleImage:(UIImage*) image withParam:(CGFloat) inset ;
 
+/**
+ *  截屏保存为图片
+ *
+ *  @return 返回的图片文件
+ */
+- (UIImage *)scroonSnap:(UIView *)view ;
+
 @end
