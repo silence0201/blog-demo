@@ -14,6 +14,7 @@
 		E85677AD1D63441D00F6C0E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E85677AC1D63441D00F6C0E6 /* Assets.xcassets */; };
 		E85677B01D63441D00F6C0E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E85677AE1D63441D00F6C0E6 /* LaunchScreen.storyboard */; };
 		E85677B91D63449F00F6C0E6 /* UIImage+Quartz2DExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E85677B81D63449F00F6C0E6 /* UIImage+Quartz2DExtension.m */; };
+		E8BFFF4F1D6486A600C6DB64 /* CircleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BFFF4E1D6486A600C6DB64 /* CircleImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		E85677B11D63441D00F6C0E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E85677B71D63449F00F6C0E6 /* UIImage+Quartz2DExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Quartz2DExtension.h"; sourceTree = "<group>"; };
 		E85677B81D63449F00F6C0E6 /* UIImage+Quartz2DExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Quartz2DExtension.m"; sourceTree = "<group>"; };
+		E8BFFF4D1D6486A600C6DB64 /* CircleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleImageView.h; sourceTree = "<group>"; };
+		E8BFFF4E1D6486A600C6DB64 /* CircleImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,8 @@
 				E85677A01D63441D00F6C0E6 /* Supporting Files */,
 				E85677B71D63449F00F6C0E6 /* UIImage+Quartz2DExtension.h */,
 				E85677B81D63449F00F6C0E6 /* UIImage+Quartz2DExtension.m */,
+				E8BFFF4D1D6486A600C6DB64 /* CircleImageView.h */,
+				E8BFFF4E1D6486A600C6DB64 /* CircleImageView.m */,
 			);
 			path = Quartz2DDemo;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 				E85677B91D63449F00F6C0E6 /* UIImage+Quartz2DExtension.m in Sources */,
 				E85677A81D63441D00F6C0E6 /* ViewController.m in Sources */,
 				E85677A51D63441D00F6C0E6 /* AppDelegate.m in Sources */,
+				E8BFFF4F1D6486A600C6DB64 /* CircleImageView.m in Sources */,
 				E85677A21D63441D00F6C0E6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +312,7 @@
 				E85677B61D63441D00F6C0E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
