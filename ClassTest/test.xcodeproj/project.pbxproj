@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E8F742591D66B2B9001E4CB1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F742581D66B2B9001E4CB1 /* main.m */; };
 		E8F742611D66B510001E4CB1 /* MyArray.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F742601D66B510001E4CB1 /* MyArray.m */; };
+		E8F742641D66E6C3001E4CB1 /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F742631D66E6C3001E4CB1 /* MyClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		E8F742581D66B2B9001E4CB1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E8F7425F1D66B510001E4CB1 /* MyArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyArray.h; sourceTree = "<group>"; };
 		E8F742601D66B510001E4CB1 /* MyArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyArray.m; sourceTree = "<group>"; };
+		E8F742621D66E6C3001E4CB1 /* MyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClass.h; sourceTree = "<group>"; };
+		E8F742631D66E6C3001E4CB1 /* MyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				E8F742581D66B2B9001E4CB1 /* main.m */,
 				E8F7425F1D66B510001E4CB1 /* MyArray.h */,
 				E8F742601D66B510001E4CB1 /* MyArray.m */,
+				E8F742621D66E6C3001E4CB1 /* MyClass.h */,
+				E8F742631D66E6C3001E4CB1 /* MyClass.m */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8F742641D66E6C3001E4CB1 /* MyClass.m in Sources */,
 				E8F742591D66B2B9001E4CB1 /* main.m in Sources */,
 				E8F742611D66B510001E4CB1 /* MyArray.m in Sources */,
 			);
@@ -245,6 +251,7 @@
 				E8F7425E1D66B2B9001E4CB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
