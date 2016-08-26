@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ctk-TK-dZb">
+                                <rect key="frame" x="204" y="144" width="60" height="30"/>
+                                <state key="normal" title="method1"/>
+                                <connections>
+                                    <action selector="method1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dz6-NU-LYe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcR-I3-3I6">
+                                <rect key="frame" x="345.5" y="144" width="62" height="30"/>
+                                <state key="normal" title="method2"/>
+                                <connections>
+                                    <action selector="method2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6c8-Fj-Op3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ssY-lM-qvp">
+                                <rect key="frame" x="283" y="250" width="35" height="30"/>
+                                <state key="normal" title="undo"/>
+                                <connections>
+                                    <action selector="Undo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bOt-RJ-ukE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldx-MD-30v">
+                                <rect key="frame" x="295" y="199" width="10.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRW-bQ-F9I">
+                                <rect key="frame" x="284" y="308" width="32" height="30"/>
+                                <state key="normal" title="redo"/>
+                                <connections>
+                                    <action selector="Redo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Beq-UP-hw0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tcR-I3-3I6" firstAttribute="leading" secondItem="ldx-MD-30v" secondAttribute="trailing" constant="40" id="5Oj-fX-aWX"/>
+                            <constraint firstItem="fRW-bQ-F9I" firstAttribute="top" secondItem="ssY-lM-qvp" secondAttribute="bottom" constant="28" id="TBt-MU-zZG"/>
+                            <constraint firstItem="Ctk-TK-dZb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="124" id="daO-mI-IqP"/>
+                            <constraint firstItem="fRW-bQ-F9I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="edV-Q3-ho4"/>
+                            <constraint firstItem="ssY-lM-qvp" firstAttribute="top" secondItem="ldx-MD-30v" secondAttribute="bottom" constant="30" id="hta-cI-yda"/>
+                            <constraint firstItem="ldx-MD-30v" firstAttribute="leading" secondItem="Ctk-TK-dZb" secondAttribute="trailing" constant="31" id="jJJ-H6-m6f"/>
+                            <constraint firstItem="ldx-MD-30v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="leK-hw-3pA"/>
+                            <constraint firstItem="ldx-MD-30v" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="179" id="vvc-aE-2Yp"/>
+                            <constraint firstItem="tcR-I3-3I6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="124" id="wPM-zq-ajQ"/>
+                            <constraint firstItem="ssY-lM-qvp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wv5-jX-bK4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="numberLabel" destination="ldx-MD-30v" id="6sr-Pu-Uq1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="464"/>
+        </scene>
+    </scenes>
+</document>
