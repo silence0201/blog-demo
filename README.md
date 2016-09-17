@@ -43,3 +43,4 @@
 * [ViewFromXib](ViewFromXib):加载xib视图
 * [xibNewDemo](xibNewDemo):xib中一些不常用的方法
 * [SystemShareDemo](SystemShareDemo):系统分享功能
+* [privateProtocolTest](privateProtocolTest):私有协议的继承测试
