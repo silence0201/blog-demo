@@ -45,3 +45,4 @@
 * [SystemShareDemo](SystemShareDemo):系统分享功能
 * [privateProtocolTest](privateProtocolTest):私有协议的继承测试
 * [UIAlertControllerDemo](UIAlertControllerDemo):UIAlertController简单使用
+* [ScrollerViewXibDemo](ScrollerViewXibDemo):用storyboard设置UIScrollView
