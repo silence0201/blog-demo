@@ -48,3 +48,4 @@
 * [ScrollerViewXibDemo](ScrollerViewXibDemo):用storyboard设置UIScrollView
 * [JSCoreDemo](JSCoreDemo):Objective-C调用js代码
 * [JavaScriptCoreDemo](JavaScriptCoreDemo):JavaScriptCore实现交互
+* [ChainCodeDemo](ChainCodeDemo):模仿masory实现简单的链式编程
