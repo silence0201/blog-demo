@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E8E126181D98044D00CB961A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E126171D98044D00CB961A /* main.m */; };
+		E8E1261B1D98044D00CB961A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E1261A1D98044D00CB961A /* AppDelegate.m */; };
+		E8E1261E1D98044D00CB961A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E1261D1D98044D00CB961A /* ViewController.m */; };
+		E8E126211D98044D00CB961A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8E1261F1D98044D00CB961A /* Main.storyboard */; };
+		E8E126231D98044D00CB961A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8E126221D98044D00CB961A /* Assets.xcassets */; };
+		E8E126261D98044D00CB961A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8E126241D98044D00CB961A /* LaunchScreen.storyboard */; };
+		E8E126301D9804A200CB961A /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E1262F1D9804A200CB961A /* GCDAsyncSocket.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E8E126131D98044D00CB961A /* GroupChatClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupChatClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8E126171D98044D00CB961A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E8E126191D98044D00CB961A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E8E1261A1D98044D00CB961A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E8E1261C1D98044D00CB961A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E8E1261D1D98044D00CB961A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E8E126201D98044D00CB961A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E8E126221D98044D00CB961A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8E126251D98044D00CB961A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8E126271D98044D00CB961A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8E1262E1D9804A200CB961A /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		E8E1262F1D9804A200CB961A /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8E126101D98044D00CB961A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E8E1260A1D98044D00CB961A = {
+			isa = PBXGroup;
+			children = (
+				E8E126151D98044D00CB961A /* GroupChatClient */,
+				E8E126141D98044D00CB961A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E8E126141D98044D00CB961A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8E126131D98044D00CB961A /* GroupChatClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8E126151D98044D00CB961A /* GroupChatClient */ = {
+			isa = PBXGroup;
+			children = (
+				E8E1262D1D9804A200CB961A /* TCP */,
+				E8E126191D98044D00CB961A /* AppDelegate.h */,
+				E8E1261A1D98044D00CB961A /* AppDelegate.m */,
+				E8E1261C1D98044D00CB961A /* ViewController.h */,
+				E8E1261D1D98044D00CB961A /* ViewController.m */,
+				E8E1261F1D98044D00CB961A /* Main.storyboard */,
+				E8E126221D98044D00CB961A /* Assets.xcassets */,
+				E8E126241D98044D00CB961A /* LaunchScreen.storyboard */,
+				E8E126271D98044D00CB961A /* Info.plist */,
+				E8E126161D98044D00CB961A /* Supporting Files */,
+			);
+			path = GroupChatClient;
+			sourceTree = "<group>";
+		};
+		E8E126161D98044D00CB961A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8E126171D98044D00CB961A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E8E1262D1D9804A200CB961A /* TCP */ = {
+			isa = PBXGroup;
+			children = (
+				E8E1262E1D9804A200CB961A /* GCDAsyncSocket.h */,
+				E8E1262F1D9804A200CB961A /* GCDAsyncSocket.m */,
+			);
+			path = TCP;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8E126121D98044D00CB961A /* GroupChatClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8E1262A1D98044D00CB961A /* Build configuration list for PBXNativeTarget "GroupChatClient" */;
+			buildPhases = (
+				E8E1260F1D98044D00CB961A /* Sources */,
+				E8E126101D98044D00CB961A /* Frameworks */,
+				E8E126111D98044D00CB961A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GroupChatClient;
+			productName = GroupChatClient;
+			productReference = E8E126131D98044D00CB961A /* GroupChatClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8E1260B1D98044D00CB961A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = silence;
+				TargetAttributes = {
+					E8E126121D98044D00CB961A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UKBBWVJH59;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E8E1260E1D98044D00CB961A /* Build configuration list for PBXProject "GroupChatClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8E1260A1D98044D00CB961A;
+			productRefGroup = E8E126141D98044D00CB961A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8E126121D98044D00CB961A /* GroupChatClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8E126111D98044D00CB961A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8E126261D98044D00CB961A /* LaunchScreen.storyboard in Resources */,
+				E8E126231D98044D00CB961A /* Assets.xcassets in Resources */,
+				E8E126211D98044D00CB961A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8E1260F1D98044D00CB961A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8E126301D9804A200CB961A /* GCDAsyncSocket.m in Sources */,
+				E8E1261E1D98044D00CB961A /* ViewController.m in Sources */,
+				E8E1261B1D98044D00CB961A /* AppDelegate.m in Sources */,
+				E8E126181D98044D00CB961A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E8E1261F1D98044D00CB961A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8E126201D98044D00CB961A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E8E126241D98044D00CB961A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8E126251D98044D00CB961A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8E126281D98044D00CB961A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8E126291D98044D00CB961A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8E1262B1D98044D00CB961A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UKBBWVJH59;
+				INFOPLIST_FILE = GroupChatClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silence.GroupChatClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E8E1262C1D98044D00CB961A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UKBBWVJH59;
+				INFOPLIST_FILE = GroupChatClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silence.GroupChatClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8E1260E1D98044D00CB961A /* Build configuration list for PBXProject "GroupChatClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8E126281D98044D00CB961A /* Debug */,
+				E8E126291D98044D00CB961A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8E1262A1D98044D00CB961A /* Build configuration list for PBXNativeTarget "GroupChatClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8E1262B1D98044D00CB961A /* Debug */,
+				E8E1262C1D98044D00CB961A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8E1260B1D98044D00CB961A /* Project object */;
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9ro-fS-0CV">
+                                <rect key="frame" x="20" y="28" width="500" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLa-hk-whr">
+                                <rect key="frame" x="530" y="28" width="30" height="30"/>
+                                <state key="normal" title="发送"/>
+                                <connections>
+                                    <action selector="sendAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HB8-Ug-nUt"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QBt-z2-Uhd">
+                                <rect key="frame" x="0.0" y="68" width="600" height="532"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="118-Et-LKi"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="pqS-M7-2ZM"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="QBt-z2-Uhd" firstAttribute="top" secondItem="sLa-hk-whr" secondAttribute="bottom" constant="10" id="0eB-DP-NKu"/>
+                            <constraint firstItem="sLa-hk-whr" firstAttribute="leading" secondItem="9ro-fS-0CV" secondAttribute="trailing" constant="10" id="29n-YX-H25"/>
+                            <constraint firstAttribute="trailing" secondItem="QBt-z2-Uhd" secondAttribute="trailing" id="PU1-hq-RzS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QBt-z2-Uhd" secondAttribute="bottom" id="RlC-AL-asw"/>
+                            <constraint firstItem="QBt-z2-Uhd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TB9-ut-9vS"/>
+                            <constraint firstItem="9ro-fS-0CV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="UyX-Xt-RfY"/>
+                            <constraint firstItem="9ro-fS-0CV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="X3q-2p-dWg"/>
+                            <constraint firstItem="sLa-hk-whr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="egn-Dm-62J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sLa-hk-whr" secondAttribute="trailing" constant="20" id="pzo-IW-L5V"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputText" destination="9ro-fS-0CV" id="sCp-US-s3P"/>
+                        <outlet property="tableView" destination="QBt-z2-Uhd" id="DgV-Yn-YcO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
