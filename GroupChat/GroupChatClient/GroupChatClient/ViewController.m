@@ -17,6 +17,8 @@
 
 
 @property (nonatomic,strong) GCDAsyncSocket *clientStock ;
+
+@property (nonatomic,strong) NSMutableArray *dataSource ; // 数据源
 @end
 
 @implementation ViewController
@@ -42,6 +44,12 @@
     NSString *str = self.inputText.text ;
     if(str.length == 0) return ;
     
+    
+    NSString *string = [NSString stringWithFormat:@"Me,%@",str] ;
+    [self.dataSource addObject:string] ;
+    [self.tableView reloadData] ;
+    self.inputText.text = @"" ;
+    
     [self.clientStock writeData:[str dataUsingEncoding:NSUTF8StringEncoding] withTimeout:-1 tag:0] ;
 }
 
@@ -61,7 +69,20 @@
 - (void)socket:(GCDAsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag{
     NSString *str = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding] ;
     
+    NSLog(@"%@====%@",sock,self.clientStock) ;
     NSLog(@"收到的数据为%@",str) ;
+    
+    if(str){
+        [self.dataSource addObject:str] ;
+        NSLog(@"%@",self.dataSource) ;
+        NSLog(@"%@",[NSThread currentThread]) ;
+        
+        // 必须在主线程中刷新UI
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+            [self.tableView reloadData] ;
+        }] ;
+        
+    }
     
     // 再次进行监听
     [sock readDataWithTimeout:-1 tag:0] ;
@@ -70,11 +91,26 @@
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;{
-    return 0 ;
+    return _dataSource.count ;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;{
-    return nil ;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"] ;
+    
+    NSArray *strItem = [_dataSource[indexPath.row] componentsSeparatedByString:@","];
+    
+    cell.textLabel.text = strItem[0] ;
+    cell.detailTextLabel.text = strItem[1] ;
+    
+    return cell ;
+}
+
+#pragma mark - Lazy Load
+- (NSMutableArray *)dataSource{
+    if (_dataSource == nil) {
+        _dataSource = [NSMutableArray array] ;
+    }
+    return _dataSource ;
 }
 
 @end

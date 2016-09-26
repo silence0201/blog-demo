@@ -69,7 +69,8 @@
     // 把当前的数据转发给其他的客户端:
     for(GCDAsyncSocket *socket in self.clientSockets){
         if (socket != sock) {
-            [socket writeData:data withTimeout:-1 tag:0] ;
+            NSString *string = [NSString stringWithFormat:@"%@:%d,%@",sock.connectedHost,sock.connectedPort,str] ;
+            [socket writeData:[string dataUsingEncoding:NSUTF8StringEncoding] withTimeout:-1 tag:0] ;
         }
     }
     
