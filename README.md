@@ -54,3 +54,4 @@
 * [RACUSeFrmo](RACUSeFrmo):ReactiveCocoa的实际应用
 * [mobileServiceDemo](mobileServiceDemo):Socket建立链接服务器端
 * [GroupChat](GroupChat):组聊的简单实现
+* [baiduMapDemo](baiduMapDemo):百度地图简单使用Demo
