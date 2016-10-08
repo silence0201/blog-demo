@@ -59,3 +59,4 @@
 * [ThroughTest](ThroughTest):同级View的穿透效果
 * [officialDemo2DNew](officialDemo2DNew):高德地图2D Demo
 * [officialDemoLoc](officialDemoLoc):高德地图定位
+* [UMSocialDemo](UMSocialDemo):友盟分享Demo
