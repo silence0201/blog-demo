@@ -61,3 +61,4 @@
 * [officialDemoLoc](officialDemoLoc):高德地图定位
 * [UMSocialDemo](UMSocialDemo):友盟分享Demo
 * [TodayExtensionDemo](TodayExtensionDemo):Todaywidget扩展的简单案例
+* [TouchID](TouchID):简单使用指纹解锁
