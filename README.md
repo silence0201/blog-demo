@@ -60,3 +60,4 @@
 * [officialDemo2DNew](officialDemo2DNew):高德地图2D Demo
 * [officialDemoLoc](officialDemoLoc):高德地图定位
 * [UMSocialDemo](UMSocialDemo):友盟分享Demo
+* [TodayExtensionDemo](TodayExtensionDemo):Todaywidget扩展的简单案例
