@@ -23,43 +23,26 @@
                 NSLog(@"验证成功") ;
             }else{
                 //验证失败的几种情况
-                switch (err.code) {
-                    case LAErrorAuthenticationFailed:
-                        NSLog(@"LAErrorSystemCancel");
-                        break;
-                        //用户取消
-                    case LAErrorUserCancel:
-                        NSLog(@"LAErrorUserCancel");
-                        break;
-                        //验证失败
-                    case LAErrorUserFallback:
-                        NSLog(@"LAErrorUserFallback");
-
-                        break;
+                switch (error.code) {
                     case LAErrorSystemCancel:
-                        NSLog(@"LAErrorAppCancel");
+                        NSLog(@"系统取消验证") ;
                         break;
-                    case LAErrorPasscodeNotSet:
-                        NSLog(@"LAErrorSystemCancel");
-                        break;
-                        //用户取消
-                    case LAErrorTouchIDNotAvailable:
-                        NSLog(@"LAErrorUserCancel");
-                        break;
-                        //验证失败
-                    case LAErrorTouchIDNotEnrolled:
-                        NSLog(@"LAErrorUserFallback");
-                        break;
-                    case LAErrorTouchIDLockout:
-                        NSLog(@"LAErrorAppCancel");
-                        break;
-                    case LAErrorAppCancel:
-                        NSLog(@"LAErrorAppCancel");
-                        break;
-                    case LAErrorInvalidContext:
-                        NSLog(@"LAErrorAppCancel");
-                        break;
+                    case LAErrorUserCancel:
+                        NSLog(@"用户取消验证") ;
+                        break ;
+                    case LAErrorUserFallback:
+                        NSLog(@"用户选择输入密码处理") ;
+                        [[NSOperationQueue mainQueue]addOperationWithBlock:^{
+                            // 用户选择输入密码,切换到主线程处理
+                            NSLog(@"请输入密码") ;
+                        }] ;
+                        break ;
                     default:
+                        NSLog(@"Other") ;
+                        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                            //其他情况，切换主线程处理
+                            NSLog(@"发出提示") ;
+                        }];
                         break;
                 }
 
@@ -67,6 +50,17 @@
         }] ;
     }else{
         NSLog(@"不支持指纹解锁") ;
+        switch (err.code) {
+            case LAErrorTouchIDNotEnrolled:
+                NSLog(@"用户未录入") ;
+                break;
+            case LAErrorPasscodeNotSet:
+                NSLog(@"密码未设置") ;
+                break ;
+            default:
+                NSLog(@"Touch ID 不可用") ;
+                break;
+        }
     }
 }
 

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E8F0D2321DAA845100718461"
-               BuildableName = "TouchID.app"
-               BlueprintName = "TouchID"
-               ReferencedContainer = "container:TouchID.xcodeproj">
+               BlueprintIdentifier = "E857001C1DAB67CF00D85284"
+               BuildableName = "WKWebViewDemo.app"
+               BlueprintName = "WKWebViewDemo"
+               ReferencedContainer = "container:WKWebViewDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E8F0D2321DAA845100718461"
-            BuildableName = "TouchID.app"
-            BlueprintName = "TouchID"
-            ReferencedContainer = "container:TouchID.xcodeproj">
+            BlueprintIdentifier = "E857001C1DAB67CF00D85284"
+            BuildableName = "WKWebViewDemo.app"
+            BlueprintName = "WKWebViewDemo"
+            ReferencedContainer = "container:WKWebViewDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,19 +55,12 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E8F0D2321DAA845100718461"
-            BuildableName = "TouchID.app"
-            BlueprintName = "TouchID"
-            ReferencedContainer = "container:TouchID.xcodeproj">
+            BlueprintIdentifier = "E857001C1DAB67CF00D85284"
+            BuildableName = "WKWebViewDemo.app"
+            BlueprintName = "WKWebViewDemo"
+            ReferencedContainer = "container:WKWebViewDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <EnvironmentVariables>
-         <EnvironmentVariable
-            key = "OS_ACTIVITY_MODE"
-            value = "disable"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -81,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E8F0D2321DAA845100718461"
-            BuildableName = "TouchID.app"
-            BlueprintName = "TouchID"
-            ReferencedContainer = "container:TouchID.xcodeproj">
+            BlueprintIdentifier = "E857001C1DAB67CF00D85284"
+            BuildableName = "WKWebViewDemo.app"
+            BlueprintName = "WKWebViewDemo"
+            ReferencedContainer = "container:WKWebViewDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
