@@ -66,3 +66,4 @@
 * [LayerDemo](LayerDemo):LayerDemo
 * [implicAnimation](implicAnimation):implicAnimation
 * [NoticeDemo](NoticeDemo):ios10推送SDK使用
+* [QRCodeDemo](QRCodeDemo):二维码的生成和识别
