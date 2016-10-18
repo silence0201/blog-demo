@@ -68,21 +68,34 @@
 * [officialDemo2DNew](officialDemo2DNew):高德地图2D Demo
 * [officialDemoLoc](officialDemoLoc):高德地图定位
 
+####Network:网络
 * [NSSessionBackgroudDownDemo](NSSessionBackgroudDownDemo):后台下载的简单实现
 
 
+####Media:媒体播放
 * [shortAudioDemo](shortAudioDemo):短音频的播放
+* [videoPlayDemo](videoPlayDemo):videoPlayDemo
+
+####System:系统功能
 * [SystemShareDemo](SystemShareDemo):系统分享功能
+* [UMSocialDemo](UMSocialDemo):友盟分享Demo
+* [NoticeDemo](NoticeDemo):ios10推送SDK使用
+* [TouchID](TouchID):简单使用指纹解锁
+* [TodayExtensionDemo](TodayExtensionDemo):Todaywidget扩展的简单案例
+
+####Socket:Socket网络编程
 * [ChainCodeDemo](ChainCodeDemo):模仿masory实现简单的链式编程
 * [FunctionalCodeDemo](FunctionalCodeDemo):函数式编程简单案例
-* [ReactiveCocoaDemo](ReactiveCocoaDemo):ReactiveCocoa使用Demo
-* [RACUSeFrmo](RACUSeFrmo):ReactiveCocoa的实际应用
 * [mobileServiceDemo](mobileServiceDemo):Socket建立链接服务器端
 * [GroupChat](GroupChat):组聊的简单实现
 
+####Reactive:响应式编程
+* [ReactiveCocoaDemo](ReactiveCocoaDemo):ReactiveCocoa使用Demo
+* [RACUSeFrmo](RACUSeFrmo):ReactiveCocoa的实际应用
 
-* [UMSocialDemo](UMSocialDemo):友盟分享Demo
-* [TodayExtensionDemo](TodayExtensionDemo):Todaywidget扩展的简单案例
-* [TouchID](TouchID):简单使用指纹解锁
 
-* [NoticeDemo](NoticeDemo):ios10推送SDK使用
+
+
+
+
+
