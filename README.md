@@ -50,13 +50,21 @@
 * [WKWebViewDemo](WKWebViewDemo):WKWebView使用测试Demo
 * [ScrollerViewXibDemo](ScrollerViewXibDemo):用storyboard设置UIScrollView
 
-
-* [BaseAnimationDemo](BaseAnimationDemo):CABasicAnimation基本使用
+####Data:数据存储
 * [CoreDataDemo](CoreDataDemo):CoreData的简单使用
 * [FMDBDemo](FMDBDemo):FMDB框架的简单使用
-* [NSSessionBackgroudDownDemo](NSSessionBackgroudDownDemo):后台下载的简单实现
+
+###Animation:动画
+* [BaseAnimationDemo](BaseAnimationDemo):CABasicAnimation基本使用
 * [Quartz2DDemo](Quartz2DDemo):Quartz2D简单使用
 * [ReplicatorLayerDemo](ReplicatorLayerDemo):ReplicatorLayer简单使用
+* [AnimationStudyCode](AnimationStudyCode):AnimationStudyCode学习
+* [implicAnimation](implicAnimation):implicAnimation
+* [LayerDemo](LayerDemo):LayerDemo
+
+* [NSSessionBackgroudDownDemo](NSSessionBackgroudDownDemo):后台下载的简单实现
+
+
 * [shortAudioDemo](shortAudioDemo):短音频的播放
 * [SystemShareDemo](SystemShareDemo):系统分享功能
 * [ChainCodeDemo](ChainCodeDemo):模仿masory实现简单的链式编程
@@ -72,6 +80,5 @@
 * [UMSocialDemo](UMSocialDemo):友盟分享Demo
 * [TodayExtensionDemo](TodayExtensionDemo):Todaywidget扩展的简单案例
 * [TouchID](TouchID):简单使用指纹解锁
-* [LayerDemo](LayerDemo):LayerDemo
-* [implicAnimation](implicAnimation):implicAnimation
+
 * [NoticeDemo](NoticeDemo):ios10推送SDK使用
