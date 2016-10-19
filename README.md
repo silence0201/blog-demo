@@ -32,6 +32,7 @@
 * [sortDemo](Bottom/sortDemo):简单冒泡排序
 * [UndoDemo](Bottom/UndoDemo):UndoManager功能的简单测试
 * [JSCoreDemo](Bottom/JSCoreDemo):Objective-C调用js代码
+* [DictionaryToObject](Bottom/DictionaryToObject)
 
 ###UI:界面搭建
 * [CollectionDemo](UI/CollectionDemo):Collection的简单使用
