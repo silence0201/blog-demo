@@ -50,6 +50,7 @@
 * [UIAlertControllerDemo](UI/UIAlertControllerDemo):UIAlertController简单使用
 * [WKWebViewDemo](UI/WKWebViewDemo):WKWebView使用测试Demo
 * [ScrollerViewXibDemo](UI/ScrollerViewXibDemo):用storyboard设置UIScrollView
+* [AttributedStringDemo](UI/AttributedStringDemo):富文本
 
 ####Data:数据存储
 * [Archiving](Data/Archiving):归档的简单使用
