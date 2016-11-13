@@ -52,6 +52,7 @@
 * [AttributedStringDemo](UI/AttributedStringDemo):富文本
 * [UIPopOverDemo](UI/UIPopOverDemo):弹出框
 * [intrinsicContentSize](UI/intrinsicContentSize):intrinsic size（固有尺寸)
+* [StackViewDemo](UI/StackViewDemo):StackView Demo
 
 ####Data:数据存储
 * [Archiving](Data/Archiving):归档的简单使用
