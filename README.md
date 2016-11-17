@@ -53,6 +53,7 @@
 * [UIPopOverDemo](UI/UIPopOverDemo):弹出框
 * [intrinsicContentSize](UI/intrinsicContentSize):intrinsic size（固有尺寸)
 * [StackViewDemo](UI/StackViewDemo):StackView Demo
+* [CustomDeleteDemo](UI/CustomDeleteDemo):自定义Cell左划删除按钮
 
 ####Data:数据存储
 * [Archiving](Data/Archiving):归档的简单使用
