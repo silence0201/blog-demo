@@ -57,6 +57,7 @@
 * [CustomDeleteDemo](UI/CustomDeleteDemo):自定义Cell左划删除按钮
 * [FullPopDemo](UI/FullPopDemo):全屏滑动弹出
 * [EstimatedRowHeightDemo](UI/EstimatedRowHeightDemo):自定计算Cell高度
+* [CarTabBar](UI/CarTabBar):自定义TabBar
 
 ####Data:数据存储
 * [Archiving](Data/Archiving):归档的简单使用
