@@ -10,6 +10,7 @@
 * [JavaScriptCoreDemo](Advanced/JavaScriptCoreDemo):JavaScriptCore实现交互
 * [ZombieDemo](Advanced/ZombieDemo):僵尸对象功能测试
 * [MultThreadDemo](Advanced/MultThreadDemo):多线程测试
+* [FPSDemo](Advanced/FPSDemo):FPSDemo
 
 ####Base:基础功能
 * [DebugDemo](Base/DebugDemo):Debug功能测试
