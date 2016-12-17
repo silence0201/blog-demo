@@ -26,7 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    // 必须制定一个基础
     UIView *view = [[UIView alloc]initWithFrame:CGRectMake(kMargin, kTopSpace, kScreenWidth - 2*kMargin ,50)] ;
     view.backgroundColor = [UIColor redColor] ;
     
