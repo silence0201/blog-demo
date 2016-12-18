@@ -113,6 +113,6 @@
 
 ###iPad:iPad开发学习
 * [UIPopoverControllerDemo](iPad/UIPopoverControllerDemo):UIPopoverControllerDemo简单使用
-
+* [ModalPresentationDEmo](iPad/ModalPresentationDEmo):modalTransitionStyleDemo
 
 
