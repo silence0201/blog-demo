@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E8594B061E0688ED00925021 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8594B051E0688ED00925021 /* main.m */; };
+		E8594B091E0688ED00925021 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8594B081E0688ED00925021 /* AppDelegate.m */; };
+		E8594B0C1E0688ED00925021 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8594B0B1E0688ED00925021 /* ViewController.m */; };
+		E8594B0F1E0688ED00925021 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8594B0D1E0688ED00925021 /* Main.storyboard */; };
+		E8594B111E0688ED00925021 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8594B101E0688ED00925021 /* Assets.xcassets */; };
+		E8594B141E0688ED00925021 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8594B121E0688ED00925021 /* LaunchScreen.storyboard */; };
+		E8594B1E1E06913200925021 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8594B1D1E06913200925021 /* MenuViewController.m */; };
+		E8594B221E06952500925021 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8594B211E06952500925021 /* OneViewController.m */; };
+		E8594B251E06952F00925021 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8594B241E06952F00925021 /* TwoViewController.m */; };
+		E8594B291E069B2E00925021 /* UIImage+GetColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E8594B281E069B2E00925021 /* UIImage+GetColor.m */; };
+		E8594B2E1E069B9D00925021 /* ColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8594B2C1E069B9D00925021 /* ColorViewController.m */; };
+		E8594B2F1E069B9D00925021 /* ColorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8594B2D1E069B9D00925021 /* ColorViewController.xib */; };
+		E8594B331E069FF200925021 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8594B321E069FF200925021 /* TestViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E8594B011E0688ED00925021 /* UIPopoverControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIPopoverControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8594B051E0688ED00925021 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E8594B071E0688ED00925021 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E8594B081E0688ED00925021 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E8594B0A1E0688ED00925021 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E8594B0B1E0688ED00925021 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E8594B0E1E0688ED00925021 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E8594B101E0688ED00925021 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8594B131E0688ED00925021 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8594B151E0688ED00925021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8594B1C1E06913200925021 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		E8594B1D1E06913200925021 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		E8594B201E06952500925021 /* OneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
+		E8594B211E06952500925021 /* OneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
+		E8594B231E06952F00925021 /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		E8594B241E06952F00925021 /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
+		E8594B271E069B2E00925021 /* UIImage+GetColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GetColor.h"; sourceTree = "<group>"; };
+		E8594B281E069B2E00925021 /* UIImage+GetColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GetColor.m"; sourceTree = "<group>"; };
+		E8594B2B1E069B9D00925021 /* ColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorViewController.h; sourceTree = "<group>"; };
+		E8594B2C1E069B9D00925021 /* ColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorViewController.m; sourceTree = "<group>"; };
+		E8594B2D1E069B9D00925021 /* ColorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorViewController.xib; sourceTree = "<group>"; };
+		E8594B311E069FF200925021 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		E8594B321E069FF200925021 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8594AFE1E0688ED00925021 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E8594AF81E0688ED00925021 = {
+			isa = PBXGroup;
+			children = (
+				E8594B031E0688ED00925021 /* UIPopoverControllerDemo */,
+				E8594B021E0688ED00925021 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E8594B021E0688ED00925021 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8594B011E0688ED00925021 /* UIPopoverControllerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8594B031E0688ED00925021 /* UIPopoverControllerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E8594B301E069FE700925021 /* ios8 */,
+				E8594B2A1E069B8600925021 /* Color */,
+				E8594B261E069B0D00925021 /* Category */,
+				E8594B1F1E06951400925021 /* Controller */,
+				E8594B1B1E06911400925021 /* Menu */,
+				E8594B071E0688ED00925021 /* AppDelegate.h */,
+				E8594B081E0688ED00925021 /* AppDelegate.m */,
+				E8594B0A1E0688ED00925021 /* ViewController.h */,
+				E8594B0B1E0688ED00925021 /* ViewController.m */,
+				E8594B0D1E0688ED00925021 /* Main.storyboard */,
+				E8594B101E0688ED00925021 /* Assets.xcassets */,
+				E8594B121E0688ED00925021 /* LaunchScreen.storyboard */,
+				E8594B151E0688ED00925021 /* Info.plist */,
+				E8594B041E0688ED00925021 /* Supporting Files */,
+			);
+			path = UIPopoverControllerDemo;
+			sourceTree = "<group>";
+		};
+		E8594B041E0688ED00925021 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8594B051E0688ED00925021 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E8594B1B1E06911400925021 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				E8594B1C1E06913200925021 /* MenuViewController.h */,
+				E8594B1D1E06913200925021 /* MenuViewController.m */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		E8594B1F1E06951400925021 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E8594B201E06952500925021 /* OneViewController.h */,
+				E8594B211E06952500925021 /* OneViewController.m */,
+				E8594B231E06952F00925021 /* TwoViewController.h */,
+				E8594B241E06952F00925021 /* TwoViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E8594B261E069B0D00925021 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E8594B271E069B2E00925021 /* UIImage+GetColor.h */,
+				E8594B281E069B2E00925021 /* UIImage+GetColor.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		E8594B2A1E069B8600925021 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				E8594B2B1E069B9D00925021 /* ColorViewController.h */,
+				E8594B2C1E069B9D00925021 /* ColorViewController.m */,
+				E8594B2D1E069B9D00925021 /* ColorViewController.xib */,
+			);
+			name = Color;
+			sourceTree = "<group>";
+		};
+		E8594B301E069FE700925021 /* ios8 */ = {
+			isa = PBXGroup;
+			children = (
+				E8594B311E069FF200925021 /* TestViewController.h */,
+				E8594B321E069FF200925021 /* TestViewController.m */,
+			);
+			name = ios8;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8594B001E0688ED00925021 /* UIPopoverControllerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8594B181E0688ED00925021 /* Build configuration list for PBXNativeTarget "UIPopoverControllerDemo" */;
+			buildPhases = (
+				E8594AFD1E0688ED00925021 /* Sources */,
+				E8594AFE1E0688ED00925021 /* Frameworks */,
+				E8594AFF1E0688ED00925021 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIPopoverControllerDemo;
+			productName = UIPopoverControllerDemo;
+			productReference = E8594B011E0688ED00925021 /* UIPopoverControllerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8594AF91E0688ED00925021 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = silence;
+				TargetAttributes = {
+					E8594B001E0688ED00925021 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = UKBBWVJH59;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E8594AFC1E0688ED00925021 /* Build configuration list for PBXProject "UIPopoverControllerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8594AF81E0688ED00925021;
+			productRefGroup = E8594B021E0688ED00925021 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8594B001E0688ED00925021 /* UIPopoverControllerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8594AFF1E0688ED00925021 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8594B141E0688ED00925021 /* LaunchScreen.storyboard in Resources */,
+				E8594B111E0688ED00925021 /* Assets.xcassets in Resources */,
+				E8594B2F1E069B9D00925021 /* ColorViewController.xib in Resources */,
+				E8594B0F1E0688ED00925021 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8594AFD1E0688ED00925021 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8594B0C1E0688ED00925021 /* ViewController.m in Sources */,
+				E8594B221E06952500925021 /* OneViewController.m in Sources */,
+				E8594B091E0688ED00925021 /* AppDelegate.m in Sources */,
+				E8594B291E069B2E00925021 /* UIImage+GetColor.m in Sources */,
+				E8594B251E06952F00925021 /* TwoViewController.m in Sources */,
+				E8594B061E0688ED00925021 /* main.m in Sources */,
+				E8594B331E069FF200925021 /* TestViewController.m in Sources */,
+				E8594B2E1E069B9D00925021 /* ColorViewController.m in Sources */,
+				E8594B1E1E06913200925021 /* MenuViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E8594B0D1E0688ED00925021 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8594B0E1E0688ED00925021 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E8594B121E0688ED00925021 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8594B131E0688ED00925021 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8594B161E0688ED00925021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8594B171E0688ED00925021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8594B191E0688ED00925021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UKBBWVJH59;
+				INFOPLIST_FILE = UIPopoverControllerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silence.UIPopoverControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		E8594B1A1E0688ED00925021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UKBBWVJH59;
+				INFOPLIST_FILE = UIPopoverControllerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silence.UIPopoverControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8594AFC1E0688ED00925021 /* Build configuration list for PBXProject "UIPopoverControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8594B161E0688ED00925021 /* Debug */,
+				E8594B171E0688ED00925021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8594B181E0688ED00925021 /* Build configuration list for PBXNativeTarget "UIPopoverControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8594B191E0688ED00925021 /* Debug */,
+				E8594B1A1E0688ED00925021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8594AF91E0688ED00925021 /* Project object */;
+}
