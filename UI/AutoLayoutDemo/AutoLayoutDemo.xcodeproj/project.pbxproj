@@ -15,6 +15,7 @@
 		E86003241E08141D00AC2BC4 /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = E86003211E08141D00AC2BC4 /* UITableView+SDAutoTableViewCellHeight.m */; };
 		E86003251E08141D00AC2BC4 /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E86003231E08141D00AC2BC4 /* UIView+SDAutoLayout.m */; };
 		E86003281E0817DD00AC2BC4 /* DemoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E86003271E0817DD00AC2BC4 /* DemoCell.m */; };
+		E867A2CB1E0ABFB200CDC3A9 /* DemoVC0.m in Sources */ = {isa = PBXBuildFile; fileRef = E867A2CA1E0ABFB200CDC3A9 /* DemoVC0.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		E86003231E08141D00AC2BC4 /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
 		E86003261E0817DD00AC2BC4 /* DemoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoCell.h; sourceTree = "<group>"; };
 		E86003271E0817DD00AC2BC4 /* DemoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoCell.m; sourceTree = "<group>"; };
+		E867A2C91E0ABFB200CDC3A9 /* DemoVC0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoVC0.h; sourceTree = "<group>"; };
+		E867A2CA1E0ABFB200CDC3A9 /* DemoVC0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoVC0.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +116,18 @@
 		E86003291E081CED00AC2BC4 /* DemoVC */ = {
 			isa = PBXGroup;
 			children = (
+				E867A2C81E0ABF9400CDC3A9 /* DemoVC0 */,
 			);
 			path = DemoVC;
+			sourceTree = "<group>";
+		};
+		E867A2C81E0ABF9400CDC3A9 /* DemoVC0 */ = {
+			isa = PBXGroup;
+			children = (
+				E867A2C91E0ABFB200CDC3A9 /* DemoVC0.h */,
+				E867A2CA1E0ABFB200CDC3A9 /* DemoVC0.m */,
+			);
+			name = DemoVC0;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E860030E1E08135C00AC2BC4 /* ViewController.m in Sources */,
+				E867A2CB1E0ABFB200CDC3A9 /* DemoVC0.m in Sources */,
 				E860030B1E08135C00AC2BC4 /* AppDelegate.m in Sources */,
 				E86003241E08141D00AC2BC4 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				E86003081E08135C00AC2BC4 /* main.m in Sources */,
@@ -344,6 +358,7 @@
 				E860031C1E08135C00AC2BC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

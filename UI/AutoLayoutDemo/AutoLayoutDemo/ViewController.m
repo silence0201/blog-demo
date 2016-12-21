@@ -65,5 +65,12 @@
     return [self cellHeightForIndexPath:indexPath cellContentViewWidth:[UIScreen mainScreen].bounds.size.width] ;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSString *demoClassString = [NSString stringWithFormat:@"DemoVC%ld", (long)indexPath.row];
+    UIViewController *vc = [NSClassFromString(demoClassString) new];
+    vc.title = demoClassString;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 
 @end
