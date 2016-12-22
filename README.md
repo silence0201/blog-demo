@@ -62,6 +62,7 @@
 * [NightDemo](UI/NightDemo):黑夜模式
 * [AutoresizingMaskDemo](UI/AutoresizingMaskDemo):Autoresizing属性的简单使用
 * [AutoLayoutDemo](UI/AutoLayoutDemo):AutoLayout框架的使用
+* [AutoheightLableDemo](UI/AutoheightLableDemo):自适应高度Label
 
 ####Data:数据存储
 * [Archiving](Data/Archiving):归档的简单使用
