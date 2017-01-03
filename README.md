@@ -11,6 +11,7 @@
 * [ZombieDemo](Advanced/ZombieDemo):僵尸对象功能测试
 * [MultThreadDemo](Advanced/MultThreadDemo):多线程测试
 * [FPSDemo](Advanced/FPSDemo):FPSDemo
+* [JSPatchDemo](Advanced/JSPatchDemo):JSPatch热更新
 
 ####Base:基础功能
 * [DebugDemo](Base/DebugDemo):Debug功能测试
