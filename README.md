@@ -12,7 +12,7 @@
 * [MultThreadDemo](Advanced/MultThreadDemo):多线程测试
 * [FPSDemo](Advanced/FPSDemo):FPSDemo
 * [JSPatchDemo](Advanced/JSPatchDemo):JSPatch热更新
-* [WebViewJavascriptBridgeDemo](Advanced/WebViewJavascriptBridgeDemo):WebViewJavascriptBridgeDemo
+* [WebViewJavascriptBridgeDemo](Advanced/WebViewJavascriptBridgeDemo):使用WebViewJavascriptBridge进行JS交互
 
 ####Base:基础功能
 * [DebugDemo](Base/DebugDemo):Debug功能测试
