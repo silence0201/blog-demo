@@ -13,6 +13,7 @@
 * [FPSDemo](Advanced/FPSDemo):FPSDemo
 * [JSPatchDemo](Advanced/JSPatchDemo):JSPatch热更新
 * [WebViewJavascriptBridgeDemo](Advanced/WebViewJavascriptBridgeDemo):使用WebViewJavascriptBridge进行JS交互
+* [LuaViewDemo](Advanced/LuaViewDemo):LuaView简单使用Demo
 
 ####Base:基础功能
 * [DebugDemo](Base/DebugDemo):Debug功能测试
