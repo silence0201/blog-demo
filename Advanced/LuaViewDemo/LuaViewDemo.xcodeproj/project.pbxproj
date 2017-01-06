@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		9B2DF29210AC4C098CA8F557 /* libPods-LuaViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E2397F7C6C600024E5EB39 /* libPods-LuaViewDemo.a */; };
+		E8229C421E1F2E8900E53A08 /* Views.lua in Resources */ = {isa = PBXBuildFile; fileRef = E8229C411E1F2E8900E53A08 /* Views.lua */; };
+		E8229C441E1F303700E53A08 /* ImageAnimate.lua in Resources */ = {isa = PBXBuildFile; fileRef = E8229C431E1F303700E53A08 /* ImageAnimate.lua */; };
+		E8229C461E1F481D00E53A08 /* HTTP.lua in Resources */ = {isa = PBXBuildFile; fileRef = E8229C451E1F481D00E53A08 /* HTTP.lua */; };
+		E8229C481E1F49FD00E53A08 /* JSON.lua in Resources */ = {isa = PBXBuildFile; fileRef = E8229C471E1F49FD00E53A08 /* JSON.lua */; };
+		E8229C4A1E1F6EF400E53A08 /* String.lua in Resources */ = {isa = PBXBuildFile; fileRef = E8229C491E1F6EF400E53A08 /* String.lua */; };
+		E8229C4C1E1F837A00E53A08 /* System.lua in Resources */ = {isa = PBXBuildFile; fileRef = E8229C4B1E1F837A00E53A08 /* System.lua */; };
+		E8229C4E1E1F844E00E53A08 /* Timer.lua in Resources */ = {isa = PBXBuildFile; fileRef = E8229C4D1E1F844E00E53A08 /* Timer.lua */; };
+		E8229C501E1F863600E53A08 /* AudioPlayer.lua in Resources */ = {isa = PBXBuildFile; fileRef = E8229C4F1E1F863600E53A08 /* AudioPlayer.lua */; };
+		E8229C521E1F868E00E53A08 /* PagerView.lua in Resources */ = {isa = PBXBuildFile; fileRef = E8229C511E1F868E00E53A08 /* PagerView.lua */; };
 		E83945551E1DD6B500831A7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E83945541E1DD6B500831A7F /* main.m */; };
 		E83945581E1DD6B500831A7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E83945571E1DD6B500831A7F /* AppDelegate.m */; };
 		E839455B1E1DD6B500831A7F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E839455A1E1DD6B500831A7F /* ViewController.m */; };
@@ -50,6 +59,15 @@
 		26E2397F7C6C600024E5EB39 /* libPods-LuaViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LuaViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C9D7DE8F56767A080CB4894 /* Pods-LuaViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuaViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LuaViewDemo/Pods-LuaViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		43CC20E2A6EA94B532B0EFDB /* Pods-LuaViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuaViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LuaViewDemo/Pods-LuaViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E8229C411E1F2E8900E53A08 /* Views.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Views.lua; sourceTree = "<group>"; };
+		E8229C431E1F303700E53A08 /* ImageAnimate.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ImageAnimate.lua; sourceTree = "<group>"; };
+		E8229C451E1F481D00E53A08 /* HTTP.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HTTP.lua; sourceTree = "<group>"; };
+		E8229C471E1F49FD00E53A08 /* JSON.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JSON.lua; sourceTree = "<group>"; };
+		E8229C491E1F6EF400E53A08 /* String.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = String.lua; sourceTree = "<group>"; };
+		E8229C4B1E1F837A00E53A08 /* System.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = System.lua; sourceTree = "<group>"; };
+		E8229C4D1E1F844E00E53A08 /* Timer.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Timer.lua; sourceTree = "<group>"; };
+		E8229C4F1E1F863600E53A08 /* AudioPlayer.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AudioPlayer.lua; sourceTree = "<group>"; };
+		E8229C511E1F868E00E53A08 /* PagerView.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PagerView.lua; sourceTree = "<group>"; };
 		E83945501E1DD6B500831A7F /* LuaViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuaViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E83945541E1DD6B500831A7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E83945561E1DD6B500831A7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -206,6 +224,15 @@
 				E83945A91E1E303700831A7F /* Customloading.lua */,
 				E83945AB1E1E309400831A7F /* LoadingIndicator.lua */,
 				E83945AF1E1E3B2300831A7F /* CallOC.lua */,
+				E8229C411E1F2E8900E53A08 /* Views.lua */,
+				E8229C431E1F303700E53A08 /* ImageAnimate.lua */,
+				E8229C451E1F481D00E53A08 /* HTTP.lua */,
+				E8229C471E1F49FD00E53A08 /* JSON.lua */,
+				E8229C491E1F6EF400E53A08 /* String.lua */,
+				E8229C4B1E1F837A00E53A08 /* System.lua */,
+				E8229C4D1E1F844E00E53A08 /* Timer.lua */,
+				E8229C4F1E1F863600E53A08 /* AudioPlayer.lua */,
+				E8229C511E1F868E00E53A08 /* PagerView.lua */,
 			);
 			path = Lua;
 			sourceTree = "<group>";
@@ -300,7 +327,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E839458B1E1DE1EC00831A7F /* color2.png in Resources */,
+				E8229C421E1F2E8900E53A08 /* Views.lua in Resources */,
 				E83945981E1DE25200831A7F /* Alert.lua in Resources */,
+				E8229C521E1F868E00E53A08 /* PagerView.lua in Resources */,
 				E83945631E1DD6B500831A7F /* LaunchScreen.storyboard in Resources */,
 				E83945961E1DE1EC00831A7F /* snow.png in Resources */,
 				E83945B01E1E3B2300831A7F /* CallOC.lua in Resources */,
@@ -308,16 +337,20 @@
 				E83945941E1DE1EC00831A7F /* img4.tiff in Resources */,
 				E839459C1E1DF5E100831A7F /* ScrollView.lua in Resources */,
 				E839459A1E1DE77200831A7F /* TableView.lua in Resources */,
+				E8229C461E1F481D00E53A08 /* HTTP.lua in Resources */,
 				E839458E1E1DE1EC00831A7F /* button0.png in Resources */,
 				E83945A61E1E2D0B00831A7F /* iconLabel.lua in Resources */,
 				E839458A1E1DE1EC00831A7F /* color1.png in Resources */,
 				E83945A01E1E17DB00831A7F /* Button.lua in Resources */,
 				E83945AA1E1E303700831A7F /* Customloading.lua in Resources */,
 				E83945AC1E1E309400831A7F /* LoadingIndicator.lua in Resources */,
+				E8229C4A1E1F6EF400E53A08 /* String.lua in Resources */,
 				E83945901E1DE1EC00831A7F /* img1.tiff in Resources */,
 				E83945A21E1E1BB600831A7F /* Image.lua in Resources */,
 				E83945601E1DD6B500831A7F /* Assets.xcassets in Resources */,
 				E839459E1E1E132700831A7F /* Label.lua in Resources */,
+				E8229C4E1E1F844E00E53A08 /* Timer.lua in Resources */,
+				E8229C481E1F49FD00E53A08 /* JSON.lua in Resources */,
 				E83945A81E1E2D7900831A7F /* JHSIconfont.ttf in Resources */,
 				E839458F1E1DE1EC00831A7F /* button1.png in Resources */,
 				E83945911E1DE1EC00831A7F /* img10.tiff in Resources */,
@@ -325,7 +358,10 @@
 				E83945A41E1E297700831A7F /* WebView.lua in Resources */,
 				E83945931E1DE1EC00831A7F /* img16.tiff in Resources */,
 				E839455E1E1DD6B500831A7F /* Main.storyboard in Resources */,
+				E8229C501E1F863600E53A08 /* AudioPlayer.lua in Resources */,
 				E83945951E1DE1EC00831A7F /* img7.tiff in Resources */,
+				E8229C441E1F303700E53A08 /* ImageAnimate.lua in Resources */,
+				E8229C4C1E1F837A00E53A08 /* System.lua in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

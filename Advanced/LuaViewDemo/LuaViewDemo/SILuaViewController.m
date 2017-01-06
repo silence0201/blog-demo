@@ -63,6 +63,10 @@
     [self.navigationController pushViewController:vc animated:YES] ;
 }
 
+- (void)testJson:(NSDictionary *)dic{
+    NSLog(@"JSON:%@",dic); 
+}
+
 
 
 @end

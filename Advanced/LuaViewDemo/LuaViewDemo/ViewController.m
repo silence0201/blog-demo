@@ -26,8 +26,6 @@
 - (void)configLuaView{
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"LuaViewDemo";
-    self.edgesForExtendedLayout = UIRectEdgeNone;
-    self.automaticallyAdjustsScrollViewInsets = NO;
     CGRect rect = self.view.bounds;
     self.tableView = [[UITableView alloc]initWithFrame:rect];
     self.tableView.dataSource = self;
