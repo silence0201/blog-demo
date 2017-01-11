@@ -14,6 +14,7 @@
 * [JSPatchDemo](Advanced/JSPatchDemo):JSPatch热更新
 * [WebViewJavascriptBridgeDemo](Advanced/WebViewJavascriptBridgeDemo):使用WebViewJavascriptBridge进行JS交互
 * [LuaViewDemo](Advanced/LuaViewDemo):LuaView简单使用Demo
+* [LuaScriptCoreDemo](Advanced/LuaScriptCoreDemo):LuaScriptCore事件lua交互
 
 ####Base:基础功能
 * [DebugDemo](Base/DebugDemo):Debug功能测试
