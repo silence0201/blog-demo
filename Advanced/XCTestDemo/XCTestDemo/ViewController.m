@@ -10,6 +10,10 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextField *userName;
+@property (weak, nonatomic) IBOutlet UITextField *userPassword;
+
+
 @end
 
 @implementation ViewController
@@ -17,6 +21,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
+
+- (IBAction)loginAction:(id)sender {
+    if ([self.userName.text isEqualToString:@"Silence"] &&[self.userPassword.text isEqualToString:@"1234"]) {
+        NSLog(@"😁success😁");
+    } else {
+        NSLog(@"☹failed☹");
+    }
+}
+
 
 
 
