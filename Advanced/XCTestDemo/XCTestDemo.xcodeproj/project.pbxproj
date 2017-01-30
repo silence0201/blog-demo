@@ -16,6 +16,7 @@
 		E84B328C1E39E8280012317C /* UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E84B328B1E39E8280012317C /* UnitTests.m */; };
 		E84B32951E39EED70012317C /* AssertTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E84B32941E39EED70012317C /* AssertTest.m */; };
 		E84B329D1E3A31830012317C /* UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E84B329C1E3A31830012317C /* UITests.m */; };
+		E84B32A51E3F3AAF0012317C /* UITestDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = E84B32A41E3F3AAF0012317C /* UITestDemo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		E84B329A1E3A31830012317C /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E84B329C1E3A31830012317C /* UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITests.m; sourceTree = "<group>"; };
 		E84B329E1E3A31830012317C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E84B32A41E3F3AAF0012317C /* UITestDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITestDemo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 			children = (
 				E84B329C1E3A31830012317C /* UITests.m */,
 				E84B329E1E3A31830012317C /* Info.plist */,
+				E84B32A41E3F3AAF0012317C /* UITestDemo.m */,
 			);
 			path = UITests;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E84B32A51E3F3AAF0012317C /* UITestDemo.m in Sources */,
 				E84B329D1E3A31830012317C /* UITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
