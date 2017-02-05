@@ -16,6 +16,8 @@
 * [LuaViewDemo](Advanced/LuaViewDemo):LuaView简单使用Demo
 * [LuaScriptCoreDemo](Advanced/LuaScriptCoreDemo):LuaScriptCore事件lua交互
 * [XCTestDemo](Advanced/XCTestDemo):XCTest使用
+* [UMAnalyticsDemo](Advanced/UMAnalyticsDemo):UMAnalyticsDemo
+* [WeakifyDemo](Advanced/WeakifyDemo):WeakifyDemo
 
 #### Base:基础功能
 * [DebugDemo](Base/DebugDemo):Debug功能测试
