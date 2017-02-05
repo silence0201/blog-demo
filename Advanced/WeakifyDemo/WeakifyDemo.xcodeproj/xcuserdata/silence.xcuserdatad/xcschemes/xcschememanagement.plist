@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>WeakTest.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>WeakifyDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>void (^verifyMemoryManagement)(void);      @autoreleasepool {         NSString *foo __attribute__((objc_precise_lifetime)) = [@"foo" mutableCopy];         NSString *bar __attribute__((objc_precise_lifetime)) = [@"bar" mutableCopy];          void *fooPtr = &amp;foo;         void *barPtr = &amp;bar;          @weakify(foo);         @unsafeify(bar);          BOOL (^matchesFooOrBar)(NSString *) = ^ BOOL (NSString *str){             @strongify(bar, foo);              XCTAssertEqualObjects(foo, @"foo", @"");             XCTAssertEqualObjects(bar, @"bar", @"");              XCTAssertTrue(fooPtr != &amp;foo, @"Address of 'foo' within block should be different from its address outside the block");             XCTAssertTrue(barPtr != &amp;bar, @"Address of 'bar' within block should be different from its address outside the block");              return [foo isEqual:str] || [bar isEqual:str];         };          XCTAssertTrue(matchesFooOrBar(@"foo"), @"");         XCTAssertTrue(matchesFooOrBar(@"bar"), @"");         XCTAssertFalse(matchesFooOrBar(@"buzz"), @"");          verifyMemoryManagement = [^{             / Can only strongify the weak reference without issue.             @strongify(foo);             XCTAssertNil(foo, @"");         } copy];     }      void (^verifyMemoryManagement)(void);      @autoreleasepool {         NSString *foo __attribute__((objc_precise_lifetime)) = [@"foo" mutableCopy];         NSString *bar __attribute__((objc_precise_lifetime)) = [@"bar" mutableCopy];          void *fooPtr = &amp;foo;         void *barPtr = &amp;bar;          @weakify(foo);         @unsafeify(bar);          BOOL (^matchesFooOrBar)(NSString *) = ^ BOOL (NSString *str){             @strongify(bar, foo);              XCTAssertEqualObjects(foo, @"foo", @"");             XCTAssertEqualObjects(bar, @"bar", @"");              XCTAssertTrue(fooPtr != &amp;foo, @"Address of 'foo' within block should be different from its address outside the block");             XCTAssertTrue(barPtr != &amp;bar, @"Address of 'bar' within block should be different from its address outside the block");              return [foo isEqual:str] || [bar isEqual:str];         };          XCTAssertTrue(matchesFooOrBar(@"foo"), @"");         XCTAssertTrue(matchesFooOrBar(@"bar"), @"");         XCTAssertFalse(matchesFooOrBar(@"buzz"), @"");          verifyMemoryManagement = [^{             / Can only strongify the weak reference without issue.             @strongify(foo);             XCTAssertNil(foo, @"");         } copy];     }  WeakifTest.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>E8865EE31E476784005DB787</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E8865F061E47693F005DB787</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E8865F0F1E476971005DB787</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
