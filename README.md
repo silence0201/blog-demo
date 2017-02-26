@@ -18,6 +18,7 @@
 * [XCTestDemo](Advanced/XCTestDemo):XCTest使用
 * [UMAnalyticsDemo](Advanced/UMAnalyticsDemo):UMAnalyticsDemo
 * [WeakifyDemo](Advanced/WeakifyDemo):WeakifyDemo
+* [LoadDemo](Advanced/LoadDemo)LoadDemo
 
 #### Base:基础功能
 * [DebugDemo](Base/DebugDemo):Debug功能测试
