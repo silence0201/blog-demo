@@ -19,6 +19,7 @@
 * [UMAnalyticsDemo](Advanced/UMAnalyticsDemo):UMAnalyticsDemo
 * [WeakifyDemo](Advanced/WeakifyDemo):WeakifyDemo
 * [LoadDemo](Advanced/LoadDemo)LoadDemo
+* [RegexDemo](Advanced/RegexDemo):正则表达式的简单实用
 
 #### Base:基础功能
 * [DebugDemo](Base/DebugDemo):Debug功能测试
