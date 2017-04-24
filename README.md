@@ -22,6 +22,7 @@
 * [RegexDemo](Advanced/RegexDemo):正则表达式的简单实用
 * [CrashGetDemo](Advanced/CrashGetDemo):简单Crash获取
 * [ExceptionHandlerDemo](Advanced/ExceptionHandlerDemo):简单Crash异常处理
+* [MapDemo](Advanced/MapDemo):map和flatMap区别
 
 #### Base:基础功能
 * [DebugDemo](Base/DebugDemo):Debug功能测试
