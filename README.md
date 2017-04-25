@@ -34,6 +34,7 @@
 * [NSPredicateDemo](Base/NSPredicateDemo):NSPredicate的简答使用
 * [NSSetDemo](Base/NSSetDemo):NSSet的简单使用
 * [privateProtocolTest](Base/privateProtocolTest):私有协议的继承测试
+* [associatedtypeDemo](Base/associatedtypeDemo):Swift中协议泛型的实现
 
 #### Bottom:系统底层
 * [CategoryExtenDemo](Bottom/CategoryExtenDemo):向分类中添加属性
