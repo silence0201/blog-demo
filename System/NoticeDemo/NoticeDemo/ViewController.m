@@ -20,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [self requestLoactionNotification] ;
 }
 
 // 发送本地通知
@@ -76,11 +77,11 @@
     
     /*UNCalendarNotificationTrigger*/
     // 周一早上 8：00 上班
-    NSDateComponents *components = [[NSDateComponents alloc] init];
+//    NSDateComponents *components = [[NSDateComponents alloc] init];
     // 注意，weekday是从周日开始的，如果想设置为从周一开始，大家可以自己想想~
-    components.weekday = 2;
-    components.hour = 8;
-    UNCalendarNotificationTrigger *trigger2 = [UNCalendarNotificationTrigger triggerWithDateMatchingComponents:components repeats:YES];
+//    components.weekday = 2;
+//    components.hour = 8;
+//    UNCalendarNotificationTrigger *trigger2 = [UNCalendarNotificationTrigger triggerWithDateMatchingComponents:components repeats:YES];
     
     /*UNLocationNotificationTrigger这个方法一般要先#import<CoreLocation/CoreLocation.h>*/
     
@@ -90,9 +91,9 @@
      - (void)locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region代理方法反馈相关信息
      */
     
-    CLRegion *region = [[CLRegion alloc] init];
+//    CLRegion *region = [[CLRegion alloc] init];
     
-    UNLocationNotificationTrigger *trigger3 = [UNLocationNotificationTrigger triggerWithRegion:region repeats:YES] ;
+//    UNLocationNotificationTrigger *trigger3 = [UNLocationNotificationTrigger triggerWithRegion:region repeats:YES] ;
     
     // 创建本地通知
     NSString *requestIdentifer = @"TestRequestww1";
