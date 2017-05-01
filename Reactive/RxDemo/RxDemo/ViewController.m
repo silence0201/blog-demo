@@ -34,6 +34,7 @@
     [self textFieldDemo] ;
     [self KVODemo] ;
     [self liftSelectorDemo] ;
+    [self RACSubjectAndRACReplaySubjectDemo] ;
 }
 
 -(Person *)person {
@@ -125,8 +126,7 @@
 }
 
 #pragma mark - RACSubjectAnd RACRepalySubject
-- (void)RACSubjectAndRACReplaySubject
-{
+- (void)RACSubjectAndRACReplaySubjectDemo {
     //    RACSubject使用步骤
     /**
      1、创建信号 【RACSubject subject】，跟RACSignal不一样，创建信号时没有block。
@@ -150,7 +150,7 @@
         NSLog(@"第二个订阅者:%@",x);
     }];
     
-    //    3、发送信号
+    //3、发送信号
     [subject sendNext:@1];
     [subject sendNext:@2];
     
@@ -172,16 +172,14 @@
      也就是先保存值，再订阅值
      
      */
-    
-    
-    //    1、创建信号
+    //1、创建信号
     RACReplaySubject *replaySubject = [RACReplaySubject replaySubjectWithCapacity:2];
     
     //2、发送信号
     [replaySubject sendNext:@1];
     [replaySubject sendNext:@2];
     
-    // 3、订阅信号
+    //3、订阅信号
     [replaySubject subscribeNext:^(id x) {
         NSLog(@"第一个订阅者收到的数据%@",x);
     }];
