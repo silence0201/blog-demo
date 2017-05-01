@@ -39,6 +39,7 @@
     [self RACSubjectAndRACReplaySubjectDemo] ;
     [self RACSequenceDemo];
     [self RACCommandDemo] ;
+    [self RACMulticastConnectionDemo] ;
 }
 
 -(Person *)person {
@@ -315,6 +316,55 @@
     
     // 执行命令
     [_command execute:@1] ;
+}
+
+#pragma mark - RACMulticastConnection
+- (void)RACMulticastConnectionDemo {
+    /**
+     RACMulticastConnection使用步骤
+     
+     ****   1、创建信号 +(RACSignal)createSignal
+     ****   2、创建连接  RACMulticastConnection *connect = [signal publish];
+     ****   3、订阅信号，注意：订阅的不再是之前的信号，而是连接的信号[connect.signal subscribeNext];
+     ****   4、连接 [connect connect];
+     
+     
+     RACMulticastConnection底层原理
+     
+     // 1.创建connect，connect.sourceSignal -> RACSignal(原始信号)  connect.signal -> RACSubject
+     // 2.订阅connect.signal，会调用RACSubject的subscribeNext，创建订阅者，而且把订阅者保存起来，不会执行block。
+     // 3.[connect connect]内部会订阅RACSignal(原始信号)，并且订阅者是RACSubject
+     // 3.1.订阅原始信号，就会调用原始信号中的didSubscribe
+     // 3.2 didSubscribe，拿到订阅者调用sendNext，其实是调用RACSubject的sendNext
+     // 4.RACSubject的sendNext,会遍历RACSubject所有订阅者发送信号。
+     // 4.1 因为刚刚第二步，都是在订阅RACSubject，因此会拿到第二步所有的订阅者，调用他们的nextBlock
+     
+     
+     
+     需求 ： 假设子啊一个信号中发送请求，每次订阅一次都会发送请求，这样就会导致多次请求。
+     解决  使用RACMulticastConnection。
+     
+     
+     */
+    
+    RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        NSLog(@"Send") ;
+        [subscriber sendNext:@1] ;
+        return nil ;
+    }] ;
+    
+    // 订阅信号
+    [signal subscribeNext:^(id  _Nullable x) {
+        NSLog(@"接受数据--%@",x) ;
+    }] ;
+    
+    // 订阅两次信号
+    [signal subscribeNext:^(id  _Nullable x) {
+        NSLog(@"接受数据2--%@",x) ;
+    }] ;
+    
+    //  会执行两次发送请求。也就是每订阅一次  就会发送一次请求
+    
 }
 
 
