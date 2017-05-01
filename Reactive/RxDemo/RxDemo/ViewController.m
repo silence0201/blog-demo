@@ -40,6 +40,7 @@
     [self RACSequenceDemo];
     [self RACCommandDemo] ;
     [self RACMulticastConnectionDemo] ;
+    [self signalForSelectorDemo] ;
 }
 
 -(Person *)person {
@@ -387,8 +388,18 @@
     
     //连接
     [connect connect];
+}
 
+- (void)signalForSelectorDemo {
+    [[self rac_signalForSelector:@selector(Log:)] subscribeNext:^(RACTuple * _Nullable x) {
+        NSLog(@"Log") ;
+    }] ;
     
+    [self performSelector:@selector(Log:) withObject:@"String"] ;
+}
+
+- (void)Log:(NSString *)s {
+    NSLog(@"%@",s) ;
 }
 
 
