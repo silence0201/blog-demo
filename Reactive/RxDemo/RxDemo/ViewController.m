@@ -33,6 +33,7 @@
     [self textFileCombinationDemo] ;
     [self textFieldDemo] ;
     [self KVODemo] ;
+    [self liftSelectorDemo] ;
 }
 
 -(Person *)person {
@@ -121,6 +122,98 @@
     }] ;
     
 //    RAC(self.nameLabel,text) = RACObserve(self.person, name) ;
+}
+
+#pragma mark - RACSubjectAnd RACRepalySubject
+- (void)RACSubjectAndRACReplaySubject
+{
+    //    RACSubject使用步骤
+    /**
+     1、创建信号 【RACSubject subject】，跟RACSignal不一样，创建信号时没有block。
+     2、订阅信号 -（RACDisposable *）subscribeNext:(void(^)(id x)nextBlock)
+     3、发送信号 sengNext:(id Value)
+     
+     // RACSubject : 底层实现跟RACSignal不一样
+     1、调用subscribeNext订阅信号，只是把订阅者保存起来，并且订阅者的nextBlock已经赋值了。
+     2、调用sendNext发送信号，遍历刚刚保存的所有订阅者，一个一个调用订阅者的nextBlock
+     */
+    
+    // 创建信号
+    RACSubject *subject = [RACSubject subject];
+    
+    //订阅信号
+    [subject subscribeNext:^(id x) {
+        // block调用时刻：当信号发出新值，就会调用
+        NSLog(@"第一个订阅者：%@",x);
+    }];
+    [subject subscribeNext:^(id x) {
+        NSLog(@"第二个订阅者:%@",x);
+    }];
+    
+    //    3、发送信号
+    [subject sendNext:@1];
+    [subject sendNext:@2];
+    
+    
+    
+    //    RACRepalySubject使用步骤
+    /**
+     
+     1、创建信号 [RACReplaySubject subject] ,跟RACSignal不一样，创建信号时没有block
+     2、可以先发送信号，再订阅信号，RACSubject不可以！！！
+     *订阅信号 -(RACDisposable)subscribeNext:(void(^)(id x))nextBlock
+     *发送信号 sendNext:(id)value
+     
+     RACReplaySubject：底层实现和RACSubject不一样
+     1、调用sendNext发送信号，把值保存起来，然后遍历刚刚保存的所有订阅者，一个一个调用订阅者的nextBlock
+     2、调用subscribeNext订阅信号，遍历所有保存的值，一个一个调用订阅者的nextBlock
+     
+     如果想当一个信号被订阅，就重复播放之前所有值，需要先发送信号，再订阅信号
+     也就是先保存值，再订阅值
+     
+     */
+    
+    
+    //    1、创建信号
+    RACReplaySubject *replaySubject = [RACReplaySubject replaySubjectWithCapacity:2];
+    
+    //2、发送信号
+    [replaySubject sendNext:@1];
+    [replaySubject sendNext:@2];
+    
+    // 3、订阅信号
+    [replaySubject subscribeNext:^(id x) {
+        NSLog(@"第一个订阅者收到的数据%@",x);
+    }];
+    [replaySubject subscribeNext:^(id x) {
+        NSLog(@"第二个订阅者收到的数据%@",x);
+    }];
+    
+}
+
+#pragma mark -- liftSelector
+- (void)liftSelectorDemo {
+    RACSignal *request1 = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        [subscriber sendNext:@"发送请求1"];
+        return [RACDisposable disposableWithBlock:^{
+            NSLog(@"信号一被销毁了") ;
+        }];
+    }];
+    RACSignal *request2 = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [subscriber sendNext:@"发送请求2"];
+        });
+        return [RACDisposable disposableWithBlock:^{
+            NSLog(@"信号二被销毁了") ;
+        }];
+    }];
+
+    // 使用注意：几个信号，参数一的方法就必须有几个参数，每个参数对应信号发出的数据
+    [self rac_liftSelector:@selector(wtkUpdateWithDic1:withDic2:) withSignalsFromArray:@[request1,request2]];
+}
+
+- (void)wtkUpdateWithDic1:(id )dic1 withDic2:(id )dic2{
+    NSLog(@"1--%@\n 2---%@",dic1,dic2);
 }
 
 @end
