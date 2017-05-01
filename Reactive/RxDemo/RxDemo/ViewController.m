@@ -38,6 +38,7 @@
     [self liftSelectorDemo] ;
     [self RACSubjectAndRACReplaySubjectDemo] ;
     [self RACSequenceDemo];
+    [self RACCommandDemo] ;
 }
 
 -(Person *)person {
