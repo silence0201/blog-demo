@@ -21,6 +21,10 @@
 
 @property (nonatomic,strong) RACDelegateProxy *proxy ;
 
+@property (nonatomic,strong) NSString *valueA ;
+@property (nonatomic,strong) NSString *valueB ;
+@property (nonatomic,strong) NSNumber *integerProperty ;
+
 @end
 
 @implementation ViewController{
@@ -41,6 +45,7 @@
     [self RACCommandDemo] ;
     [self RACMulticastConnectionDemo] ;
     [self signalForSelectorDemo] ;
+    [self RACChannelDemo] ;
 }
 
 -(Person *)person {
@@ -390,6 +395,7 @@
     [connect connect];
 }
 
+#pragma mark -- signalForSelectorDemo
 - (void)signalForSelectorDemo {
     [[self rac_signalForSelector:@selector(Log:)] subscribeNext:^(RACTuple * _Nullable x) {
         NSLog(@"Log") ;
@@ -401,6 +407,68 @@
 - (void)Log:(NSString *)s {
     NSLog(@"%@",s) ;
 }
+
+#pragma mark -- bindMethod
+- (void)bindMethodDemo {
+    /**
+     假设想监听文本框的内容，并且在每次输出结果的时候，都在文本框的内容拼接一段文字“输出：”
+     */
+    //    ******************方式1、 在返回结果后拼接
+    //    [_textField.rac_textSignal subscribeNext:^(id x) {
+    //        NSLog(@"输出：%@",x);
+    //    }];
+    
+    //    ******************方式2、在返回结果前拼接，使用RAC中的bind方法做处理
+    /**
+     bind方法参数：需要传入一个返回值是RACSignalBindBlock的block参数
+     RACStreamBindBlock是一个block类型，返回值是信号，参数（Value，stop），因此参数的block返回值也是一个block
+     
+     
+     RACStreamBindBlock：
+     参数一（value）：表示接受到信号的原始值，还没有做处理
+     参数二（*stop）: 用来控制绑定block，如果*stop = YES,那么久结束绑定
+     返回值：信号，做好处理，再通过这个信号返回出去，一般使用RACReturnSignal，需要手动导入头文件RACReturnSignal.h
+     
+     
+     bind方法使用步骤
+     1、传入一个返回值RACStreamBindBlock的block
+     2、描述一个RACStreamBindBlock类型的bindBlock作为block的返回值
+     3、描述
+     */
+
+    
+}
+
+- (void)RACChannelDemo {
+    RACChannelTerminal *channelA = RACChannelTo(self, valueA);
+    RACChannelTerminal *channelB = RACChannelTo(self, valueB);
+    [[channelA map:^id(NSString *value) {
+        if ([value isEqualToString:@"西"]) {
+            return @"东";
+        }
+        return value;
+    }] subscribe:channelB];
+    [[channelB map:^id(NSString *value) {
+        if ([value isEqualToString:@"左"]) {
+            return @"右";
+        }
+        return value;
+    }] subscribe:channelA];
+    
+    [[RACObserve(self, valueA) filter:^BOOL(id value) {
+        return value ? YES : NO;
+    }] subscribeNext:^(NSString* x) {
+        NSLog(@"你向%@", x);
+    }];
+    [[RACObserve(self, valueB) filter:^BOOL(id value) {
+        return value ? YES : NO;
+    }] subscribeNext:^(NSString* x) {
+        NSLog(@"他向%@", x);
+    }];
+    self.valueA = @"西";
+    self.valueB = @"左";
+}
+
 
 
 @end
