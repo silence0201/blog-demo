@@ -349,7 +349,7 @@
     
     RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
         NSLog(@"Send") ;
-        [subscriber sendNext:@1] ;
+        [subscriber sendNext:@"Sine"] ;
         return nil ;
     }] ;
     
@@ -364,6 +364,30 @@
     }] ;
     
     //  会执行两次发送请求。也就是每订阅一次  就会发送一次请求
+    
+    //  ********** 1、创建信号
+    
+    RACSignal *signal2  = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        NSLog(@"发送请求2");
+        [subscriber sendNext:@1];
+        return nil;
+    }];
+    // 创建连接
+    RACMulticastConnection *connect = [signal2 publish];
+    
+    //订阅信号
+    // 注意：订阅信号也不能激活信号，只是保存订阅者到数据，必须通过连接，当调用连接，就会一次清调用所有订阅者的sendNext；
+    [connect.signal subscribeNext:^(id x) {
+        NSLog(@"订阅者一信号");
+    }];
+    
+    [connect.signal subscribeNext:^(id x) {
+        NSLog(@"订阅者二信号");
+    }];
+    
+    //连接
+    [connect connect];
+
     
 }
 
