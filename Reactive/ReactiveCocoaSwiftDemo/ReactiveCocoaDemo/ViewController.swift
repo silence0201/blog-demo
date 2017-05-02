@@ -22,6 +22,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var btn: UIButton!
+    
     
     var person: Person = Person(name: "Test")
     
@@ -46,7 +48,9 @@ class ViewController: UIViewController {
         
         createSignalMehods()
         textFieldDemo()
-        
+        btnDemo()
+        combineLastDemo()
+        zipDemo()
     }
     // MARK: - 信号创建
     func createSignalMehods() {
@@ -102,7 +106,61 @@ class ViewController: UIViewController {
             self.label.text = text ?? "Default"
             self.label.sizeToFit()
         }
+        
+        // KVO方式监听文本变化
+        let result = textField.reactive.producer(forKeyPath: "text")
+        result.startWithValues { (text) in
+            print(text ?? "Default")
+        }
     }
+    
+    // MARK: - 按钮监听
+    func btnDemo() {
+        btn.reactive.controlEvents(.touchUpInside).observeValues { (button) in
+            print("点击了按钮")
+        }
+    }
+    
+    // MARK: - 信号合并
+    func combineLastDemo() {
+        let (signalA,observerA) = Signal<String,NoError>.pipe()
+        let (signalB,observerB) = Signal<String,NoError>.pipe()
+        Signal.combineLatest(signalA, signalB).observeValues { (str1,str2) in
+            print("收到的消息为\(str1)--\(str2)")
+        }
+        
+        observerA.send(value: "1")
+        observerA.sendCompleted()
+        observerB.send(value: "2")
+        observerB.sendCompleted()
+    }
+    
+    func zipDemo() {
+        let (signalA,observerA) = Signal<String,NoError>.pipe()
+        let (signalB,observerB) = Signal<String,NoError>.pipe()
+        Signal.zip(signalA, signalB).observeValues { (value) in
+            print("收到的值\(value.0)-\(value.1)")
+        }
+        
+        observerA.send(value: "1")
+        observerA.sendCompleted()
+        observerB.send(value: "2")
+        observerB.sendCompleted()
+    }
+    
+    // MARK: - Scheduler调度器
+    func testScheduler() {
+        // 主线程上延迟0.3秒调用
+        QueueScheduler.main.schedule(after: Date(timeIntervalSinceNow: 0.3)) { 
+            print("在主线程上调用")
+        }
+        
+        QueueScheduler.init().schedule(after: Date(timeIntervalSinceNow: 0.3)) { 
+            print("在子线程上调用")
+        }
+    }
+    
+    
     
     // MARK: - 基本操作
     func empty() {

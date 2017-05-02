@@ -35,10 +35,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1N-sN-yWE">
+                                <rect key="frame" x="164" y="294" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="btn" destination="y1N-sN-yWE" id="eop-qx-Otw"/>
                         <outlet property="label" destination="ZkD-9N-Pg9" id="qP2-IT-CjT"/>
                         <outlet property="textField" destination="1ZA-uW-vpI" id="wp0-fv-8MH"/>
                     </connections>
