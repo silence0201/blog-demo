@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var btn: UIButton!
     
+    @IBOutlet weak var countLabel: UILabel!
     
     var person: Person = Person(name: "Test")
     
@@ -51,6 +52,8 @@ class ViewController: UIViewController {
         btnDemo()
         combineLastDemo()
         zipDemo()
+        notificationDemo()
+        bindDemo()
     }
     // MARK: - 信号创建
     func createSignalMehods() {
@@ -160,8 +163,69 @@ class ViewController: UIViewController {
         }
     }
     
+    // MARK: - Delegate
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier,
+            let next = segue.destination as? NextViewController{
+            if identifier == "next" {
+                next.signalTuple.output.observeValues({ (value) in
+                    self.countLabel.text = value
+                })
+            }
+        }
+    }
     
+    // MARK: - 通知
+    func notificationDemo() {
+        let notiName = Notification.Name(rawValue:"Home")
+        NotificationCenter.default.reactive.notifications(forName: notiName).observeValues { (notifi) in
+            print(notifi.object ?? "")
+            // dump(notifi.object)
+        }
+        
+        NotificationCenter.default.post(name: notiName, object: self)
+        
+        // 键盘通知
+        NotificationCenter.default.reactive.notifications(forName: Notification.Name.UIKeyboardWillShow).observeValues { (noftifi) in
+            print("键盘弹起了")
+        }
+        
+        NotificationCenter.default.reactive.notifications(forName: Notification.Name.UIKeyboardWillHide).observeValues { (notifi) in
+            print("键盘隐藏了")
+        }
+    }
     
+    // MARK: - KVO
+    func KVODemo() {
+        let result = label.reactive.producer(forKeyPath: "text")
+        result.startWithValues { (value) in
+            let v = value ?? ""
+            print("改变了\(v)")
+        }
+    }
+    
+
+    // MARK: - 其他事件绑定
+    func bindDemo() {
+        // 当输入框的两个值长度都大于或者等于6，按钮才可以点击
+        let signal = textField.reactive.continuousTextValues.map { (str) -> Bool in
+            guard let s = str else{
+                return false
+            }
+            if s.characters.count > 6 {
+                return true
+            }
+            return false
+        }
+        
+//        signal.observeValues { (enable) in
+//            self.btn.isEnabled = enable
+//        }
+        
+        btn.reactive.isEnabled <~ signal
+    }
+
+
     // MARK: - 基本操作
     func empty() {
         let emptySignal = Signal<Int,NoError>.empty ;
