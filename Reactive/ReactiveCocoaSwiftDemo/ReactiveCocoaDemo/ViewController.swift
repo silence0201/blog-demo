@@ -26,6 +26,8 @@ class ViewController: UIViewController {
         filterDemo()
         takeDemo()
         signalProducerDemo()
+        replayLazilyDemo()
+        logEvents()
     }
     
     func empty() {
@@ -127,10 +129,34 @@ class ViewController: UIViewController {
             }catch(let error) {
                 print(error)
             }
-            
             print(v)
         }
+    }
+    
+    func replayLazilyDemo() {
+        let baseProducter = SignalProducer<Int,NoError>([1,2,3,4,6,4]).replayLazily(upTo: 2) ;
         
+        print("-----1-----")
+        baseProducter.startWithValues { (value) in
+            print(value)
+        }
+        
+        print("-----2-----")
+        baseProducter.startWithValues { (value) in
+            print(value)
+        }
+        
+        print("-----3 -----")
+        baseProducter.startWithValues { (value) in
+            print(value)
+        }
+    }
+    
+    func logEvents() {
+        let baseProducter = SignalProducer<Int,NoError>([1,2,3,4,6,4])
+        baseProducter.logEvents().startWithValues { (vale) in
+            print(vale)
+        }
     }
 
 }
