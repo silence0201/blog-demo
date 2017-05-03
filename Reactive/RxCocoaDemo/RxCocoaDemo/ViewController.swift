@@ -18,6 +18,11 @@ class ViewController: UIViewController {
         ofDemo()
         fromDemo()
         repeatElementDemo()
+        
+        publishSubjectDemo()
+        replaySubjectDemo()
+        behaviorSubjectDemo()
+        variableDemo()
     }
     
     // MARK: - Create
@@ -149,6 +154,85 @@ class ViewController: UIViewController {
             .do(onNext: { print("Intercepted:", $0) }, onError: { print("Intercepted error:", $0) }, onCompleted: { print("Completed")  })
             .subscribe(onNext: { print($0) })
             .disposed(by: disposeBag)
+    }
+    
+    // MARK: - PublishSubject
+    func publishSubjectDemo() {
+        let disposeBag = DisposeBag()
+        let subject = PublishSubject<String>()
+        
+        subject.subscribe { (even) in
+            print("subscribe1:\(even)")
+        }.disposed(by: disposeBag)
+        subject.onNext("🐶")
+        subject.onNext("🐱")
+        
+        subject.subscribe { (even) in
+            print("subscribe2:\(even)")
+        }.disposed(by: disposeBag)
+        subject.onNext("🅰️")
+        subject.onNext("🅱️")
+    }
+    
+    func replaySubjectDemo() {
+        let disposeBag = DisposeBag()
+        let subject = ReplaySubject<String>.create(bufferSize: 1)
+        
+        print("-----ReplaySubject-----")
+        
+        subject.subscribe { (even) in
+            print("subscribe1:\(even)")
+        }.disposed(by: disposeBag)
+        subject.onNext("🐶")
+        subject.onNext("🐱")
+        
+        subject.subscribe { (even) in
+            print("subscribe2:\(even)")
+        }.disposed(by: disposeBag)
+        subject.onNext("🅰️")
+        subject.onNext("🅱️")
+    }
+    
+    func behaviorSubjectDemo() {
+        print("-----ReplaySubject-----")
+        let disposeBag = DisposeBag()
+        let subject = BehaviorSubject(value: "🔴")
+        
+        subject.subscribe { (even) in
+            print("subscribe1:\(even)")
+        }.disposed(by: disposeBag)
+        subject.onNext("🐶")
+        subject.onNext("🐱")
+        
+        subject.subscribe { (even) in
+            print("subscribe2:\(even)")
+        }.disposed(by: disposeBag)
+        subject.onNext("🅰️")
+        subject.onNext("🅱️")
+        
+        subject.subscribe { (even) in
+            print("subscribe3:\(even)")
+        }.disposed(by: disposeBag)
+        subject.onNext("🍐")
+        subject.onNext("🍊")
+    }
+    
+    func variableDemo() {
+        print("-----Variable-----")
+        let disposeBag = DisposeBag()
+        let variable = Variable("🔴")
+        
+        variable.asObservable().subscribe { (even) in
+            print("subscribe1:\(even)")
+        }.disposed(by: disposeBag)
+        variable.value = "🐶"
+        variable.value = "🐱"
+        
+        variable.asObservable().subscribe { (even) in
+            print("subscribe2:\(even)")
+        }.disposed(by: disposeBag)
+        variable.value = "🅰️"
+        variable.value = "🅱️"
     }
 }
 
