@@ -105,6 +105,7 @@
 #### Media:媒体播放
 * [shortAudioDemo](Media/shortAudioDemo):短音频的播放
 * [videoPlayDemo](Media/videoPlayDemo):videoPlayDemo
+* [GifDecode](Media/GifDecode):利用ImageIO解析gif
 
 #### System:系统功能
 * [SystemShareDemo](System/SystemShareDemo):系统分享功能
