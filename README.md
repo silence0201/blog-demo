@@ -43,6 +43,7 @@
 * [DataSourceDemo](ObjcTips/DataSourceDemo):简化TableView数据源代理
 * [CICategoryList](ObjcTips/CICategoryList):滤镜列表
 * [OCMockDemo](ObjcTips/OCMockDemo):OCMock测试工具的使用
+* [NSScannerDemo](ObjcTips/NSScannerDemo):NSScannerDemo
 
 #### Bottom:系统底层
 * [CategoryExtenDemo](Bottom/CategoryExtenDemo):向分类中添加属性
