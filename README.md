@@ -26,6 +26,7 @@
 * [ChangeIconsDemo](Advanced/ChangeIconsDemo):10.3更换图标
 * [KVOControllerDemo](Advanced/KVOControllerDemo):KVOController使用
 * [CoreDataDemo](Advanced/CoreDataDemo):CoreDataDemo
+* [UIDebugDemo](Advanced/UIDebugDemo):UIDebuggingInformationOverlay简单使用
 
 #### Base:基础功能
 * [DebugDemo](Base/DebugDemo):Debug功能测试
