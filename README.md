@@ -49,7 +49,7 @@
 * [BeautifyFaceDemo](GPUImage/BeautifyFaceDemo):GPUImage实现美图效果
 * [GPUImageFilterGroupDemo](GPUImage/GPUImageFilterGroupDemo):GPUImage滤镜组合
 * [GPUImageMovieDemo](GPUImage/GPUImageMovieDemo):GPUImage保存视频
-
+* [GPUImageSimpleDemo](GPUImage/GPUImageSimpleDemo):GPUImage滤镜的简单使用
 
 #### Bottom:系统底层
 * [CategoryExtenDemo](Bottom/CategoryExtenDemo):向分类中添加属性
