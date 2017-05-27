@@ -45,6 +45,9 @@
 * [OCMockDemo](ObjcTips/OCMockDemo):OCMock测试工具的使用
 * [NSScannerDemo](ObjcTips/NSScannerDemo):NSScannerDemo
 
+#### GPUImage: GPUImage简单使用
+* [BeautifyFaceDemo](GPUImage/BeautifyFaceDemo):GPUImage实现美图效果
+
 #### Bottom:系统底层
 * [CategoryExtenDemo](Bottom/CategoryExtenDemo):向分类中添加属性
 * [ClassTest](Bottom/ClassTest):class方法的简单使用
