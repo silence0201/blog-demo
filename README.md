@@ -51,7 +51,7 @@
 * [GPUImageMovieDemo](GPUImage/GPUImageMovieDemo):GPUImage保存视频
 * [GPUImageSimpleDemo](GPUImage/GPUImageSimpleDemo):GPUImage滤镜的简单使用
 * [GPUImageTiltShiftDemo](GPUImage/GPUImageTiltShiftDemo):GPUImageTiltShiftDemo
-* 
+* [GPUImageVideoCameraDemo](GPUImage/GPUImageVideoCameraDemo):GPUImage录制视频
 
 #### Bottom:系统底层
 * [CategoryExtenDemo](Bottom/CategoryExtenDemo):向分类中添加属性
