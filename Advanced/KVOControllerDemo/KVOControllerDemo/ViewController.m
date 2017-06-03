@@ -22,6 +22,7 @@
 @interface ViewController ()
 
 @property (nonatomic,strong) Person *person ;
+@property (nonatomic,assign) NSInteger num ;
 
 @end
 
@@ -40,8 +41,15 @@
         NSLog(@"%@",change);
     }] ;
     
+    [self.KVOController observe:self keyPath:@"num" options:NSKeyValueObservingOptionNew block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+        NSLog(@"%@",change) ;
+    }] ;
+    
     self.person.name = @"New Name" ;
     self.person.age = 12 ;
+    
+    _num = 10 ;
+    self.num = 20 ;
 }
 
 
