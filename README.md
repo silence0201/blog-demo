@@ -29,6 +29,7 @@
 * [UIDebugDemo](Advanced/UIDebugDemo):UIDebuggingInformationOverlay简单使用
 * [NSProxyDemo](Advanced/NSProxyDemo):NSProxy简单使用
 * [DSCrashDemo](Advanced/DSCrashDemo):调试崩溃测试
+* [GCDDemo](Advanced/GCDDemo):Swift3 GCDDemo
 
 #### Base:基础功能
 * [DebugDemo](Base/DebugDemo):Debug功能测试
