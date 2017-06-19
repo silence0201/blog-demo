@@ -98,6 +98,7 @@
 * [AutoLayoutDemo](UI/AutoLayoutDemo):AutoLayout框架的使用
 * [AutoheightLableDemo](UI/AutoheightLableDemo):自适应高度Label
 * [NavigationBarTransitionDemo](UI/NavigationBarTransitionDemo):导航栏切换动画
+* [UIScreenEdgePanGestureRecognizerDemo](UI/UIScreenEdgePanGestureRecognizerDemo):UIScreenEdgePanGestureRecognizerDemo
 
 #### Data:数据存储
 * [Archiving](Data/Archiving):归档的简单使用
