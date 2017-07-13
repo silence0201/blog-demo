@@ -25,6 +25,13 @@
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction:)];
     tap.cancelsTouchesInView = NO;  // 默认为YES
     [button addGestureRecognizer:tap];
+    
+    
+    UITapGestureRecognizer *tapp = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(ttAction:)] ;
+    tapp.cancelsTouchesInView = NO ;
+    tapp.delaysTouchesBegan = NO ;
+    tapp.delaysTouchesEnded = YES ;
+    [self.view addGestureRecognizer:tapp] ;
 }
 
 - (void)tapAction:(UITapGestureRecognizer *)sender {
@@ -33,6 +40,18 @@
 
 - (void)btnAction:(UIButton *)btn {
     NSLog(@"button");
+}
+
+- (void)ttAction:(UITapGestureRecognizer *)sender {
+    NSLog(@"%s",__FUNCTION__);
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    NSLog(@"Begin") ;
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    NSLog(@"End") ;
 }
 
 
