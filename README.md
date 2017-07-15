@@ -42,6 +42,7 @@
 * [NSSetDemo](Base/NSSetDemo):NSSet的简单使用
 * [privateProtocolTest](Base/privateProtocolTest):私有协议的继承测试
 * [associatedtypeDemo](Base/associatedtypeDemo):Swift中协议泛型的实现
+* [SegmentationDemo](Base/SegmentationDemo):String分词
 
 #### ObjcTips: Objc优化建议
 * [DataSourceDemo](ObjcTips/DataSourceDemo):简化TableView数据源代理
