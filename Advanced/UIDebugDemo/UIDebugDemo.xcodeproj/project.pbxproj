@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E81138CF1FE2B35300882DA3 /* UIApplication+UIDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = E81138CE1FE2B35300882DA3 /* UIApplication+UIDebug.m */; };
+		E81138D81FE2B71300882DA3 /* UIApplication+UIDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = E81138D71FE2B71300882DA3 /* UIApplication+UIDebug.m */; };
 		E88DB6BC1ED9C2E9003A7310 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E88DB6BB1ED9C2E9003A7310 /* main.m */; };
 		E88DB6BF1ED9C2E9003A7310 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E88DB6BE1ED9C2E9003A7310 /* AppDelegate.m */; };
 		E88DB6C21ED9C2E9003A7310 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E88DB6C11ED9C2E9003A7310 /* ViewController.m */; };
@@ -17,8 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E81138CD1FE2B35200882DA3 /* UIApplication+UIDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+UIDebug.h"; sourceTree = "<group>"; };
-		E81138CE1FE2B35300882DA3 /* UIApplication+UIDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+UIDebug.m"; sourceTree = "<group>"; };
+		E81138D61FE2B71200882DA3 /* UIApplication+UIDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+UIDebug.h"; sourceTree = "<group>"; };
+		E81138D71FE2B71300882DA3 /* UIApplication+UIDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+UIDebug.m"; sourceTree = "<group>"; };
 		E88DB6B71ED9C2E9003A7310 /* UIDebugDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIDebugDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88DB6BB1ED9C2E9003A7310 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E88DB6BD1ED9C2E9003A7310 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -65,11 +65,11 @@
 				E88DB6BE1ED9C2E9003A7310 /* AppDelegate.m */,
 				E88DB6C01ED9C2E9003A7310 /* ViewController.h */,
 				E88DB6C11ED9C2E9003A7310 /* ViewController.m */,
+				E81138D61FE2B71200882DA3 /* UIApplication+UIDebug.h */,
+				E81138D71FE2B71300882DA3 /* UIApplication+UIDebug.m */,
 				E88DB6C31ED9C2E9003A7310 /* Main.storyboard */,
 				E88DB6C61ED9C2E9003A7310 /* Assets.xcassets */,
 				E88DB6C81ED9C2E9003A7310 /* LaunchScreen.storyboard */,
-				E81138CD1FE2B35200882DA3 /* UIApplication+UIDebug.h */,
-				E81138CE1FE2B35300882DA3 /* UIApplication+UIDebug.m */,
 				E88DB6CB1ED9C2E9003A7310 /* Info.plist */,
 				E88DB6BA1ED9C2E9003A7310 /* Supporting Files */,
 			);
@@ -155,7 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E81138CF1FE2B35300882DA3 /* UIApplication+UIDebug.m in Sources */,
+				E81138D81FE2B71300882DA3 /* UIApplication+UIDebug.m in Sources */,
 				E88DB6C21ED9C2E9003A7310 /* ViewController.m in Sources */,
 				E88DB6BF1ED9C2E9003A7310 /* AppDelegate.m in Sources */,
 				E88DB6BC1ED9C2E9003A7310 /* main.m in Sources */,
