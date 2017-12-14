@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "UIApplication+Debug.h"
+#import "UIApplication+UIDebug.h"
 
 @interface ViewController ()
 

@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E81138CF1FE2B35300882DA3 /* UIApplication+UIDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = E81138CE1FE2B35300882DA3 /* UIApplication+UIDebug.m */; };
 		E88DB6BC1ED9C2E9003A7310 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E88DB6BB1ED9C2E9003A7310 /* main.m */; };
 		E88DB6BF1ED9C2E9003A7310 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E88DB6BE1ED9C2E9003A7310 /* AppDelegate.m */; };
 		E88DB6C21ED9C2E9003A7310 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E88DB6C11ED9C2E9003A7310 /* ViewController.m */; };
 		E88DB6C51ED9C2E9003A7310 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88DB6C31ED9C2E9003A7310 /* Main.storyboard */; };
 		E88DB6C71ED9C2E9003A7310 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E88DB6C61ED9C2E9003A7310 /* Assets.xcassets */; };
 		E88DB6CA1ED9C2E9003A7310 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88DB6C81ED9C2E9003A7310 /* LaunchScreen.storyboard */; };
-		E88DB6D31ED9C317003A7310 /* UIApplication+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = E88DB6D21ED9C317003A7310 /* UIApplication+Debug.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E81138CD1FE2B35200882DA3 /* UIApplication+UIDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+UIDebug.h"; sourceTree = "<group>"; };
+		E81138CE1FE2B35300882DA3 /* UIApplication+UIDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+UIDebug.m"; sourceTree = "<group>"; };
 		E88DB6B71ED9C2E9003A7310 /* UIDebugDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIDebugDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88DB6BB1ED9C2E9003A7310 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E88DB6BD1ED9C2E9003A7310 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -27,8 +29,6 @@
 		E88DB6C61ED9C2E9003A7310 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E88DB6C91ED9C2E9003A7310 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E88DB6CB1ED9C2E9003A7310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E88DB6D11ED9C317003A7310 /* UIApplication+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Debug.h"; sourceTree = "<group>"; };
-		E88DB6D21ED9C317003A7310 /* UIApplication+Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Debug.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,10 +68,10 @@
 				E88DB6C31ED9C2E9003A7310 /* Main.storyboard */,
 				E88DB6C61ED9C2E9003A7310 /* Assets.xcassets */,
 				E88DB6C81ED9C2E9003A7310 /* LaunchScreen.storyboard */,
+				E81138CD1FE2B35200882DA3 /* UIApplication+UIDebug.h */,
+				E81138CE1FE2B35300882DA3 /* UIApplication+UIDebug.m */,
 				E88DB6CB1ED9C2E9003A7310 /* Info.plist */,
 				E88DB6BA1ED9C2E9003A7310 /* Supporting Files */,
-				E88DB6D11ED9C317003A7310 /* UIApplication+Debug.h */,
-				E88DB6D21ED9C317003A7310 /* UIApplication+Debug.m */,
 			);
 			path = UIDebugDemo;
 			sourceTree = "<group>";
@@ -110,7 +110,7 @@
 		E88DB6AF1ED9C2E9003A7310 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Silence;
 				TargetAttributes = {
 					E88DB6B61ED9C2E9003A7310 = {
@@ -155,7 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E88DB6D31ED9C317003A7310 /* UIApplication+Debug.m in Sources */,
+				E81138CF1FE2B35300882DA3 /* UIApplication+UIDebug.m in Sources */,
 				E88DB6C21ED9C2E9003A7310 /* ViewController.m in Sources */,
 				E88DB6BF1ED9C2E9003A7310 /* AppDelegate.m in Sources */,
 				E88DB6BC1ED9C2E9003A7310 /* main.m in Sources */,
@@ -194,7 +194,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -202,7 +204,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -243,7 +249,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -251,7 +259,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -317,6 +329,7 @@
 				E88DB6D01ED9C2E9003A7310 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
