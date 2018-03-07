@@ -22,9 +22,12 @@
     NSLog(@"%s",__FUNCTION__);
 }
 
+// 执行一个存在的Selector
 - (IBAction)selectorAction:(id)sender {
     [self performSelector:@selector(testSelector)];
 }
+
+// 错误,执行一个Unrecoginzed Selector
 - (IBAction)unrecoginzedSelector:(id)sender {
     [self performSelector:@selector(test)];
 }
