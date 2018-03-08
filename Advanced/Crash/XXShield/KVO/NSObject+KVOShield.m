@@ -71,7 +71,7 @@ static void(*__xx_hook_orgin_function_removeObserver)(NSObject* self, SEL _cmd ,
         @try {
             [observer observeValueForKeyPath:keyPath ofObject:object change:change context:context];
         } @catch (NSException *exception) {
-            NSString *reason = [NSString stringWithFormat:@"non fatal Error%@",[exception description]];
+            NSString *reason = [NSString stringWithFormat:@"Error:%@",[exception description]];
             [XXRecord recordFatalWithReason:reason errorType:(EXXShieldTypeKVO)];
         }
     }
@@ -137,7 +137,8 @@ XXStaticHookClass(NSObject, ProtectKVO, void, @selector(removeObserver:forKeyPat
     @KVORemoveIgnoreMarco()
     NSHashTable<NSObject *> *os = self.kvoProxy.kvoInfoMap[keyPath];
     
-    if (os.count == 0) {
+    if (![os containsObject:observer]){
+        // 移除一个不存在的监听
         NSString *reason = [NSString stringWithFormat:@"target is %@ method is %@, reason : KVO remove Observer to many times.",
                             [self class], XXSEL2Str(@selector(removeObserver:forKeyPath:))];
         [XXRecord recordFatalWithReason:reason errorType:(EXXShieldTypeKVO)];

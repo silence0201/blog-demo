@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E8160C1B205161A2006A6C03 /* KVOTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8160C1A205161A2006A6C03 /* KVOTestViewController.m */; };
 		E8328E86204EE0510092D58F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8328E84204EE0510092D58F /* Main.storyboard */; };
 		E8328E88204EE0510092D58F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8328E87204EE0510092D58F /* Assets.xcassets */; };
 		E8328E8B204EE0510092D58F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8328E89204EE0510092D58F /* LaunchScreen.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E8160C19205161A2006A6C03 /* KVOTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOTestViewController.h; sourceTree = "<group>"; };
+		E8160C1A205161A2006A6C03 /* KVOTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOTestViewController.m; sourceTree = "<group>"; };
 		E8328E7B204EE0510092D58F /* Crash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8328E85204EE0510092D58F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E8328E87204EE0510092D58F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,6 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E8160C1820516192006A6C03 /* KVOTest */ = {
+			isa = PBXGroup;
+			children = (
+				E8160C19205161A2006A6C03 /* KVOTestViewController.h */,
+				E8160C1A205161A2006A6C03 /* KVOTestViewController.m */,
+			);
+			path = KVOTest;
+			sourceTree = "<group>";
+		};
 		E8328E72204EE0510092D58F = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +117,7 @@
 		E8328E7D204EE0510092D58F /* Crash */ = {
 			isa = PBXGroup;
 			children = (
+				E8160C1820516192006A6C03 /* KVOTest */,
 				E8329134205024D40092D58F /* SmartKitTest */,
 				E83290BF205022440092D58F /* Resource */,
 				E8328E96205021A50092D58F /* Others */,
@@ -325,6 +338,7 @@
 				E832912E2050245E0092D58F /* NSMutableDictionary+Shield.m in Sources */,
 				E832912B2050245E0092D58F /* NSObject+Forward.m in Sources */,
 				E83291252050245E0092D58F /* XXRecord.m in Sources */,
+				E8160C1B205161A2006A6C03 /* KVOTestViewController.m in Sources */,
 				E83291332050245E0092D58F /* NSTimer+Shield.m in Sources */,
 				E83290BE205022300092D58F /* SDKSetup.m in Sources */,
 				E83291282050245E0092D58F /* NSNotificationCenter+Shield.m in Sources */,

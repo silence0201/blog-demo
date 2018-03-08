@@ -41,13 +41,25 @@
                                             <segue destination="7FF-TV-UHS" kind="show" id="32W-gR-ZFp"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="RYB-2S-GMW">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="JqO-2y-uV5" style="IBUITableViewCellStyleDefault" id="RYB-2S-GMW">
                                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RYB-2S-GMW" id="VUr-Jk-WSC">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="KVO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JqO-2y-uV5">
+                                                    <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Kqk-o9-D8S" kind="show" id="xUS-72-MU6"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="kgN-Mr-eD9">
                                         <rect key="frame" x="0.0" y="88" width="375" height="44"/>
@@ -104,6 +116,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UoE-o9-pif" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1194" y="189"/>
+        </scene>
+        <!--KVO-->
+        <scene sceneID="IDi-Kl-VFj">
+            <objects>
+                <viewController id="Kqk-o9-D8S" customClass="KVOTestViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mk2-3w-46D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfi-0g-wnP">
+                                <rect key="frame" x="156" y="150" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="提前释放"/>
+                                <connections>
+                                    <action selector="test1:" destination="Kqk-o9-D8S" eventType="touchUpInside" id="qvP-0L-H3Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evO-cV-Wnn">
+                                <rect key="frame" x="156" y="224" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="局部变量"/>
+                                <connections>
+                                    <action selector="test2:" destination="Kqk-o9-D8S" eventType="touchUpInside" id="Ynh-CD-XoB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfx-eU-1Ye">
+                                <rect key="frame" x="160" y="279" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Remove"/>
+                                <connections>
+                                    <action selector="test3:" destination="Kqk-o9-D8S" eventType="touchUpInside" id="VG7-dl-JoB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cJh-a6-8Gs"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="KVO" id="gtT-uM-41X"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8U1-Ns-5h0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1192.8" y="902.69865067466276"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KhV-H3-gJl">
