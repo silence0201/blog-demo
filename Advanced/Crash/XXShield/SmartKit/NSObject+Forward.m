@@ -13,17 +13,17 @@
 #import "XXShieldSwizzling.h"
 
 XXStaticHookClass(NSObject, ProtectFW, id, @selector(forwardingTargetForSelector:), (SEL)aSelector) {
-    static struct dl_info app_info;
-    if (app_info.dli_saddr == NULL) {
-        dladdr((__bridge void *)[UIApplication.sharedApplication.delegate class], &app_info);
-    }
-    struct dl_info self_info;
-    dladdr((__bridge void *)[self class], &self_info);
-    
-    // hook系统的类是非常有安全隐患的,这里过滤掉了系统类
-    if (strcmp(app_info.dli_fname, self_info.dli_fname)) {
-        return XXHookOrgin(aSelector);
-    }
+//    static struct dl_info app_info;
+//    if (app_info.dli_saddr == NULL) {
+//        dladdr((__bridge void *)[UIApplication.sharedApplication.delegate class], &app_info);
+//    }
+//    struct dl_info self_info;
+//    dladdr((__bridge void *)[self class], &self_info);
+//    
+//    // hook系统的类是非常有安全隐患的,这里过滤掉了系统类
+//    if (strcmp(app_info.dli_fname, self_info.dli_fname)) {
+//        return XXHookOrgin(aSelector);
+//    }
     
     if ([self isKindOfClass:[NSNumber class]] && [NSString instancesRespondToSelector:aSelector]) {
         NSNumber *number = (NSNumber *)self;

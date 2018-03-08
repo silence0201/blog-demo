@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E8160C1B205161A2006A6C03 /* KVOTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8160C1A205161A2006A6C03 /* KVOTestViewController.m */; };
+		E8160C1F2051705D006A6C03 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8160C1E2051705D006A6C03 /* NotificationViewController.m */; };
+		E8160C22205170ED006A6C03 /* ObserverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8160C21205170ED006A6C03 /* ObserverViewController.m */; };
 		E8328E86204EE0510092D58F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8328E84204EE0510092D58F /* Main.storyboard */; };
 		E8328E88204EE0510092D58F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8328E87204EE0510092D58F /* Assets.xcassets */; };
 		E8328E8B204EE0510092D58F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8328E89204EE0510092D58F /* LaunchScreen.storyboard */; };
@@ -37,6 +39,10 @@
 /* Begin PBXFileReference section */
 		E8160C19205161A2006A6C03 /* KVOTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOTestViewController.h; sourceTree = "<group>"; };
 		E8160C1A205161A2006A6C03 /* KVOTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOTestViewController.m; sourceTree = "<group>"; };
+		E8160C1D2051705D006A6C03 /* NotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
+		E8160C1E2051705D006A6C03 /* NotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
+		E8160C20205170ED006A6C03 /* ObserverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObserverViewController.h; sourceTree = "<group>"; };
+		E8160C21205170ED006A6C03 /* ObserverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObserverViewController.m; sourceTree = "<group>"; };
 		E8328E7B204EE0510092D58F /* Crash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8328E85204EE0510092D58F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E8328E87204EE0510092D58F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,6 +103,17 @@
 			path = KVOTest;
 			sourceTree = "<group>";
 		};
+		E8160C1C20517050006A6C03 /* NotificationTest */ = {
+			isa = PBXGroup;
+			children = (
+				E8160C1D2051705D006A6C03 /* NotificationViewController.h */,
+				E8160C1E2051705D006A6C03 /* NotificationViewController.m */,
+				E8160C20205170ED006A6C03 /* ObserverViewController.h */,
+				E8160C21205170ED006A6C03 /* ObserverViewController.m */,
+			);
+			path = NotificationTest;
+			sourceTree = "<group>";
+		};
 		E8328E72204EE0510092D58F = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +134,7 @@
 		E8328E7D204EE0510092D58F /* Crash */ = {
 			isa = PBXGroup;
 			children = (
+				E8160C1C20517050006A6C03 /* NotificationTest */,
 				E8160C1820516192006A6C03 /* KVOTest */,
 				E8329134205024D40092D58F /* SmartKitTest */,
 				E83290BF205022440092D58F /* Resource */,
@@ -348,8 +366,10 @@
 				E83291222050245E0092D58F /* XXDanglingPonterService.m in Sources */,
 				E8328E9B205021A50092D58F /* AppDelegate.m in Sources */,
 				E832912C2050245E0092D58F /* NSMutableArray+Shield.m in Sources */,
+				E8160C1F2051705D006A6C03 /* NotificationViewController.m in Sources */,
 				E83291372050250E0092D58F /* SmartKitViewController.m in Sources */,
 				E832912F2050245E0092D58F /* NSDictionary+Shield.m in Sources */,
+				E8160C22205170ED006A6C03 /* ObserverViewController.m in Sources */,
 				E83291242050245E0092D58F /* NSObject+DanglingPointer.mm in Sources */,
 				E83291232050245E0092D58F /* XXDanglingPointStub.m in Sources */,
 				E83291302050245E0092D58F /* NSCache+Shield.m in Sources */,
@@ -494,6 +514,7 @@
 					"$(PROJECT_DIR)/Crash",
 				);
 				INFOPLIST_FILE = Crash/Resource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.silence.Crash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -511,6 +532,7 @@
 					"$(PROJECT_DIR)/Crash",
 				);
 				INFOPLIST_FILE = Crash/Resource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.silence.Crash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
