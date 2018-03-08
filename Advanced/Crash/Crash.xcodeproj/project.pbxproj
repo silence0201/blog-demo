@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E808ADF7205184750040D14A /* NSTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E808ADF6205184750040D14A /* NSTimerViewController.m */; };
 		E8160C1B205161A2006A6C03 /* KVOTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8160C1A205161A2006A6C03 /* KVOTestViewController.m */; };
 		E8160C1F2051705D006A6C03 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8160C1E2051705D006A6C03 /* NotificationViewController.m */; };
 		E8160C22205170ED006A6C03 /* ObserverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8160C21205170ED006A6C03 /* ObserverViewController.m */; };
@@ -37,6 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E808ADF5205184750040D14A /* NSTimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTimerViewController.h; sourceTree = "<group>"; };
+		E808ADF6205184750040D14A /* NSTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTimerViewController.m; sourceTree = "<group>"; };
 		E8160C19205161A2006A6C03 /* KVOTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOTestViewController.h; sourceTree = "<group>"; };
 		E8160C1A205161A2006A6C03 /* KVOTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOTestViewController.m; sourceTree = "<group>"; };
 		E8160C1D2051705D006A6C03 /* NotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
@@ -94,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E808ADF42051846C0040D14A /* NSTimerTest */ = {
+			isa = PBXGroup;
+			children = (
+				E808ADF5205184750040D14A /* NSTimerViewController.h */,
+				E808ADF6205184750040D14A /* NSTimerViewController.m */,
+			);
+			path = NSTimerTest;
+			sourceTree = "<group>";
+		};
 		E8160C1820516192006A6C03 /* KVOTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +146,7 @@
 		E8328E7D204EE0510092D58F /* Crash */ = {
 			isa = PBXGroup;
 			children = (
+				E808ADF42051846C0040D14A /* NSTimerTest */,
 				E8160C1C20517050006A6C03 /* NotificationTest */,
 				E8160C1820516192006A6C03 /* KVOTest */,
 				E8329134205024D40092D58F /* SmartKitTest */,
@@ -354,6 +367,7 @@
 				E83291312050245E0092D58F /* XXShieldSwizzling.m in Sources */,
 				E83291272050245E0092D58F /* NSObject+KVOShield.m in Sources */,
 				E832912E2050245E0092D58F /* NSMutableDictionary+Shield.m in Sources */,
+				E808ADF7205184750040D14A /* NSTimerViewController.m in Sources */,
 				E832912B2050245E0092D58F /* NSObject+Forward.m in Sources */,
 				E83291252050245E0092D58F /* XXRecord.m in Sources */,
 				E8160C1B205161A2006A6C03 /* KVOTestViewController.m in Sources */,

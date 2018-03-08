@@ -80,6 +80,26 @@
                                             <segue destination="fw1-GJ-dsf" kind="show" id="y0Z-zz-oMx"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="hZ7-hT-Cr9" style="IBUITableViewCellStyleDefault" id="r9K-lB-xRg">
+                                        <rect key="frame" x="0.0" y="132" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="r9K-lB-xRg" id="SfZ-R4-t1g">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="NSTimer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hZ7-hT-Cr9">
+                                                    <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="BO0-uQ-P8y" kind="show" id="AqQ-KG-2ge"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -93,6 +113,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kE2-jj-Cvr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="482" y="198"/>
+        </scene>
+        <!--Timer-->
+        <scene sceneID="uiG-be-T9M">
+            <objects>
+                <viewController id="BO0-uQ-P8y" customClass="NSTimerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fu7-hL-9lv"/>
+                        <viewControllerLayoutGuide type="bottom" id="SAV-d8-JoE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z9e-3J-3o2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1I-P3-Ygg">
+                                <rect key="frame" x="149" y="318" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="启动定时器"/>
+                                <connections>
+                                    <action selector="fire:" destination="BO0-uQ-P8y" eventType="touchUpInside" id="h7j-b4-UTH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Timer" id="Js2-F5-GKv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ydd-kd-kTw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1322" y="229"/>
         </scene>
         <!--Notification-->
         <scene sceneID="L6D-Yw-kba">

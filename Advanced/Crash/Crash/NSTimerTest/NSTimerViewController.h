@@ -1,5 +1,5 @@
 //
-//  ObserverViewController.h
+//  NSTimerViewController.h
 //  Crash
 //
 //  Created by Silence on 2018/3/8.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ObserverViewController : UIViewController
+@interface NSTimerViewController : UIViewController
 
 @end
