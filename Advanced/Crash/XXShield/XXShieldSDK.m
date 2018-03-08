@@ -40,6 +40,10 @@
     if (ability & EXXShieldTypeTimer) {
         [self registerTimer];
     }
+    
+    if (ability & EXXShieldTypeMainUI) {
+        [self registerMainUI];
+    }
 }
 
 + (void)registerStabilityWithAbility:(EXXShieldType)ability withClassNames:(NSArray *)arr {
@@ -91,6 +95,13 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         shield_hook_load_group(XXForOCString(ProtectTimer));
+    });
+}
+
++ (void)registerMainUI {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        shield_hook_load_group(XXForOCString(ProtectUI));
     });
 }
 

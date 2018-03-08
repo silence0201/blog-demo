@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E808ADF7205184750040D14A /* NSTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E808ADF6205184750040D14A /* NSTimerViewController.m */; };
+		E808ADFB205188D20040D14A /* UIView+Shield.m in Sources */ = {isa = PBXBuildFile; fileRef = E808ADFA205188D10040D14A /* UIView+Shield.m */; };
 		E8160C1B205161A2006A6C03 /* KVOTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8160C1A205161A2006A6C03 /* KVOTestViewController.m */; };
 		E8160C1F2051705D006A6C03 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8160C1E2051705D006A6C03 /* NotificationViewController.m */; };
 		E8160C22205170ED006A6C03 /* ObserverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8160C21205170ED006A6C03 /* ObserverViewController.m */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		E808ADF5205184750040D14A /* NSTimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTimerViewController.h; sourceTree = "<group>"; };
 		E808ADF6205184750040D14A /* NSTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTimerViewController.m; sourceTree = "<group>"; };
+		E808ADFA205188D10040D14A /* UIView+Shield.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Shield.m"; sourceTree = "<group>"; };
 		E8160C19205161A2006A6C03 /* KVOTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOTestViewController.h; sourceTree = "<group>"; };
 		E8160C1A205161A2006A6C03 /* KVOTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOTestViewController.m; sourceTree = "<group>"; };
 		E8160C1D2051705D006A6C03 /* NotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
@@ -104,6 +106,14 @@
 				E808ADF6205184750040D14A /* NSTimerViewController.m */,
 			);
 			path = NSTimerTest;
+			sourceTree = "<group>";
+		};
+		E808ADF8205188AD0040D14A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E808ADFA205188D10040D14A /* UIView+Shield.m */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		E8160C1820516192006A6C03 /* KVOTest */ = {
@@ -181,6 +191,7 @@
 		E83290FA2050245E0092D58F /* XXShield */ = {
 			isa = PBXGroup;
 			children = (
+				E808ADF8205188AD0040D14A /* UI */,
 				E83290FB2050245E0092D58F /* DanglingPointerShield */,
 				E83291022050245E0092D58F /* Record */,
 				E83291062050245E0092D58F /* NSNull */,
@@ -385,6 +396,7 @@
 				E832912F2050245E0092D58F /* NSDictionary+Shield.m in Sources */,
 				E8160C22205170ED006A6C03 /* ObserverViewController.m in Sources */,
 				E83291242050245E0092D58F /* NSObject+DanglingPointer.mm in Sources */,
+				E808ADFB205188D20040D14A /* UIView+Shield.m in Sources */,
 				E83291232050245E0092D58F /* XXDanglingPointStub.m in Sources */,
 				E83291302050245E0092D58F /* NSCache+Shield.m in Sources */,
 				E8328E9A205021A50092D58F /* main.m in Sources */,

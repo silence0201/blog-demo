@@ -18,9 +18,10 @@ typedef NS_OPTIONS(NSUInteger, EXXShieldType) {
     EXXShieldTypeNotification = 1 << 5,
     EXXShieldTypeTimer = 1 << 6,
     EXXShieldTypeDangLingPointer = 1 << 7,
+    EXXShieldTypeMainUI = 1 << 8,
     EXXShieldTypeExceptDangLingPointer = (EXXShieldTypeUnrecognizedSelector | EXXShieldTypeContainer |
                                           EXXShieldTypeNSNull| EXXShieldTypeKVO |
-                                          EXXShieldTypeNotification | EXXShieldTypeTimer)
+                                          EXXShieldTypeNotification | EXXShieldTypeTimer | EXXShieldTypeMainUI)
 };
 
 @protocol XXRecordProtocol <NSObject>
