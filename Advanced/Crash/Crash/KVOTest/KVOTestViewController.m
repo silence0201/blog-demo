@@ -77,6 +77,12 @@
     [self removeObserver:self.obsever forKeyPath:@"test"];
 }
 
+- (IBAction)test4:(id)sender {
+    [self addObserver:self.obsever forKeyPath:@"view" options:(NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld) context:@"Test1"];
+    
+    // remove Context不一致,最好不要添加 Context
+    [self removeObserver:self.obsever forKeyPath:@"view" context:@"Test2"];
+}
 
 // KVOTest1:屏蔽下面:message was received but not handled
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
