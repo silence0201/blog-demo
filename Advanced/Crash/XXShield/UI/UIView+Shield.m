@@ -11,7 +11,7 @@
 #import "XXRecord.h"
 #import "XXShieldSwizzling.h"
 
-XXStaticHookMetaClass(UIView, ProtectUI, void, @selector(setNeedsDisplay)) {
+XXStaticHookClass(UIView, ProtectUI, void, @selector(setNeedsDisplay)) {
     if (strcmp(dispatch_queue_get_label(DISPATCH_CURRENT_QUEUE_LABEL), dispatch_queue_get_label(dispatch_get_main_queue())) == 0) {
         XXHookOrgin();
     } else {
@@ -22,7 +22,7 @@ XXStaticHookMetaClass(UIView, ProtectUI, void, @selector(setNeedsDisplay)) {
 }
 XXStaticHookEnd
 
-XXStaticHookMetaClass(UIView, ProtectUI, void, @selector(layoutSubviews)) {
+XXStaticHookClass(UIView, ProtectUI, void, @selector(layoutSubviews)) {
     if (strcmp(dispatch_queue_get_label(DISPATCH_CURRENT_QUEUE_LABEL), dispatch_queue_get_label(dispatch_get_main_queue())) == 0) {
         XXHookOrgin();
     } else {
@@ -33,7 +33,7 @@ XXStaticHookMetaClass(UIView, ProtectUI, void, @selector(layoutSubviews)) {
 }
 XXStaticHookEnd
 
-XXStaticHookMetaClass(UIView, ProtectUI, void, @selector(setNeedsUpdateConstraints)) {
+XXStaticHookClass(UIView, ProtectUI, void, @selector(setNeedsUpdateConstraints)) {
     if (strcmp(dispatch_queue_get_label(DISPATCH_CURRENT_QUEUE_LABEL), dispatch_queue_get_label(dispatch_get_main_queue())) == 0) {
         XXHookOrgin();
     } else {
